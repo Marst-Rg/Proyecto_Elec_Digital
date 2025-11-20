@@ -50,6 +50,41 @@ Explicación breve de qué se observa en la imagen.
 
 ## 2. Divisor
 
+### Especificaciones Iniciales
+* **Entradas:**
+    * `Dividendo`: Número binario de *N* bits (ej. 8 bits).
+    * `Divisor`: Número binario de *M* bits (ej. 4 bits).
+    * `Start`: Señal de inicio de operación.
+* **Salidas:**
+    * `Cociente`: Resultado entero de la división.
+    * `Residuo`: El resto de la operación.
+    * `Done/Ready`: Señal que indica que la operación ha terminado.
+* **Método:** (Indica aquí el algoritmo usado, ej: *Algoritmo de Restauración / Restoring Division* o *Desplazamiento y Resta*).
+
+### Diseño del Sistema
+
+#### Diagrama de Flujo (Algoritmo)
+*Describe la lógica de pasos: Cargar registros, desplazar a la izquierda, restar divisor, verificar signo, decidir si restaurar o no.*
+![Diagrama de Flujo Divisor](./assets/div_flujo.png)
+
+#### Diagrama de Bloques (Camino de Datos)
+*Muestra los registros (A, Q, M), la ALU (restador) y los multiplexores.*
+![Datapath Divisor](./assets/div_datapath.png)
+
+#### Máquina de Estados (Control)
+*Diagrama de la FSM que controla los desplazamientos y las restas (Estados: IDLE, SHIFT, SUB, RESTORE, END).*
+![FSM Divisor](./assets/div_fsm.png)
+
+### Implementación
+El código fuente está separado en unidad de control y camino de datos para modularidad.
+* **Camino de Datos (Datapath):** [Ver Código](./02_Divisor/src/datapath.v)
+* **Unidad de Control:** [Ver Código](./02_Divisor/src/control_unit.v)
+* **Módulo Superior (Top):** [Ver Código](./02_Divisor/src/top_divisor.v)
+
+### Simulación
+Se realizó una simulación comportamental para verificar casos de prueba, incluyendo la división por cero (si tu circuito la maneja).
+* **Caso de prueba:** Dividendo = 13 (1101), Divisor = 4 (0100) → Cociente = 3, Residuo = 1.
+![Simulación Divisor](./assets/div_sim.png)
 
 
 
