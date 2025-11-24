@@ -15,9 +15,8 @@
 2. [Divisor](#2-divisor)
 3. [Raíz Cuadrada](#3-raíz-cuadrada)
 4. [Convertidor Binario a BCD](#4-convertidor-binario-a-bcd)
-5. [Convertidor BCD a Binario](#5-convertidor-bcd-a-binario)
-6. [Calculadora](#6-calculadora)
-7. [Proyecto](#7-proyeccto)
+5. [Calculadora](#5-calculadora)
+6. [Proyecto](#6-proyeccto)
 ---
 
 ## 1. Multiplicador
@@ -145,31 +144,7 @@ Descripción de la prueba: *Se verifica la raíz de 144 (resultado 12) y 150 (re
 
 ---
 
-## 5. Convertidor BCD a Binario
-
-### Especificaciones Iniciales
-* **Propósito:** Ingresar datos en decimal (teclado) y convertirlos a binario para ser procesados.
-* **Método:** (Ej: Algoritmo Reverse Double Dabble o Multiplicación por pesos).
-
-### Diseño del Sistema
-#### Diagrama de Flujo
-![Algoritmo BCD2Bin](./assets/bcd2bin_flujo.png)
-
-#### Diagrama de Bloques
-![Datapath BCD2Bin](./assets/bcd2bin_datapath.png)
-
-#### Máquina de Estados
-![FSM BCD2Bin](./assets/bcd2bin_fsm.png)
-
-### Implementación
-* **Código Fuente:** [Ver Código](./05_BCD_Binario/src/bcd_to_bin.v)
-
-### Simulación
-![Simulación BCD2Bin](./assets/bcd2bin_sim.png)
-
----
-
-## 6. Calculadora (Integración Final)
+## 5. Calculadora (Integración Final)
 
 ### Especificaciones del Sistema Completo
 Descripción de la ALU (Unidad Aritmético Lógica) o el sistema central que une todos los módulos anteriores.
