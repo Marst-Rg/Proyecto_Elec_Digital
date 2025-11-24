@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Thu Oct 16 15:21:39 2025
+[*]
+[dumpfile] "/home/daniel/github-classroom/Digital-II/verilogs-danesguer/digital_UN/femtoRV/basic/rtl/cores/double/perip_double_TB.vcd"
+[dumpfile_mtime] "Thu Oct 16 15:19:56 2025"
+[dumpfile_size] 9775
+[savefile] "/home/daniel/github-classroom/Digital-II/verilogs-danesguer/digital_UN/femtoRV/basic/rtl/cores/double/perip.gtkw"
+[timestart] 0
+[size] 1920 1008
+[pos] -131 -131
+*-17.000000 569500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] peripheral_double_TB.
+[treeopen] peripheral_double_TB.dut.
+[treeopen] peripheral_double_TB.dut.double1.
+[sst_width] 201
+[signals_width] 204
+[sst_expanded] 1
+[sst_vpaned_height] 296
+@22
+peripheral_double_TB.d_in[15:0]
+peripheral_double_TB.d_out[15:0]
+peripheral_double_TB.dut.double1.C[15:0]
+@29
+peripheral_double_TB.rd
+[pattern_trace] 1
+[pattern_trace] 0

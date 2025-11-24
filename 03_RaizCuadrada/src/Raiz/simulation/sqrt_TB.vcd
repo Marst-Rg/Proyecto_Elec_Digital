@@ -1,0 +1,620 @@
+$date
+	Mon Nov 24 02:30:07 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module sqrt_TB $end
+$scope module uut $end
+$var wire 16 ! A [15:0] $end
+$var wire 1 " clk $end
+$var wire 1 # init $end
+$var wire 1 $ rst $end
+$var wire 1 % w_z $end
+$var wire 16 & w_tmp [15:0] $end
+$var wire 1 ' w_sh $end
+$var wire 1 ( w_r0 $end
+$var wire 16 ) w_lda_out [15:0] $end
+$var wire 16 * w_lda2_in [15:0] $end
+$var wire 1 + w_lda2 $end
+$var wire 1 , w_ld_tmp $end
+$var wire 1 - w_ld $end
+$var wire 16 . result [15:0] $end
+$var wire 1 / done $end
+$scope module addsub0 $end
+$var wire 16 0 in_B [15:0] $end
+$var wire 16 1 in_A [15:0] $end
+$var reg 16 2 Result [15:0] $end
+$upscope $end
+$scope module control0 $end
+$var wire 1 " clk $end
+$var wire 1 # init $end
+$var wire 1 3 msb $end
+$var wire 1 $ rst $end
+$var wire 1 % z $end
+$var parameter 3 4 CHECK $end
+$var parameter 3 5 CHECK_Z $end
+$var parameter 3 6 END1 $end
+$var parameter 3 7 LOAD_A2 $end
+$var parameter 3 8 LOAD_TMP $end
+$var parameter 3 9 SHIFT_DEC $end
+$var parameter 3 : START $end
+$var reg 8 ; count [7:0] $end
+$var reg 1 / done $end
+$var reg 1 - ld $end
+$var reg 1 , ld_tmp $end
+$var reg 1 + lda2 $end
+$var reg 1 ( r0 $end
+$var reg 1 ' sh $end
+$var reg 3 < state [2:0] $end
+$upscope $end
+$scope module count0 $end
+$var wire 1 " clk $end
+$var wire 1 ' dec $end
+$var wire 1 - ld $end
+$var reg 4 = cont [3:0] $end
+$var reg 1 % z $end
+$upscope $end
+$scope module lsr20 $end
+$var wire 1 " clk $end
+$var wire 16 > in_R1 [15:0] $end
+$var wire 16 ? in_R2 [15:0] $end
+$var wire 1 + lda2 $end
+$var wire 1 - rst_ld $end
+$var wire 1 ' shift $end
+$var wire 16 @ out_R [15:0] $end
+$var reg 32 A data [31:0] $end
+$upscope $end
+$scope module lsr_R $end
+$var wire 1 " clk $end
+$var wire 16 B in_A [15:0] $end
+$var wire 1 ( in_bit $end
+$var wire 1 C load $end
+$var wire 1 + load_R0 $end
+$var wire 1 - reset $end
+$var wire 1 ' shift $end
+$var reg 16 D out_r [15:0] $end
+$upscope $end
+$scope module lsr_TMP $end
+$var wire 1 " clk $end
+$var wire 16 E in_A [15:0] $end
+$var wire 1 F in_bit $end
+$var wire 1 , load $end
+$var wire 1 G load_R0 $end
+$var wire 1 - reset $end
+$var wire 1 H shift $end
+$var reg 16 I out_r [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 :
+b10 9
+b11 8
+b100 7
+b110 6
+b101 5
+b1 4
+$end
+#0
+$dumpvars
+bx I
+0H
+0G
+0F
+bx E
+bx D
+0C
+b0 B
+bx A
+bx @
+bx ?
+b10001000001 >
+b1000 =
+bx <
+bx ;
+x3
+bx 2
+bx 1
+bx1 0
+x/
+bx .
+x-
+x,
+x+
+bx *
+bx )
+x(
+x'
+bx &
+0%
+0$
+0#
+0"
+b10001000001 !
+$end
+#10000
+0+
+1-
+0'
+0(
+0,
+0/
+b0 <
+1"
+#20000
+13
+b1111111111111111 *
+b1111111111111111 2
+b1111111111111111 ?
+b1 0
+b0 )
+b0 1
+b0 @
+b0 &
+b0 I
+b0 .
+b0 D
+b0 E
+b10001000001 A
+1$
+0"
+#30000
+b0 ;
+1"
+#40000
+0$
+0"
+#50000
+1"
+#60000
+0"
+#70000
+1#
+1"
+#80000
+0"
+#90000
+0-
+1'
+b10 <
+1"
+#100000
+b111 =
+b1000100000100 A
+0"
+#110000
+0'
+1,
+0#
+b11 <
+1"
+#120000
+0"
+#130000
+0,
+b1 <
+1"
+#140000
+0"
+#150000
+b101 <
+1"
+#160000
+0"
+#170000
+1'
+b10 <
+1"
+#180000
+b110 =
+b100010000010000 A
+0"
+#190000
+0'
+1,
+b11 <
+1"
+#200000
+0"
+#210000
+0,
+b1 <
+1"
+#220000
+0"
+#230000
+b101 <
+1"
+#240000
+0"
+#250000
+1'
+b10 <
+1"
+#260000
+03
+b0 *
+b0 2
+b0 ?
+b1 )
+b1 1
+b1 @
+b101 =
+b10001000001000000 A
+0"
+#270000
+0'
+1,
+b11 <
+1"
+#280000
+0"
+#290000
+0,
+b1 <
+1"
+#300000
+0"
+#310000
+1+
+1(
+b100 <
+1"
+#320000
+13
+b1111111111111111 *
+b1111111111111111 2
+b1111111111111111 ?
+b0 )
+b0 1
+b0 @
+b1000001000000 A
+b1 .
+b1 D
+b1 E
+0"
+#330000
+0+
+0(
+b101 <
+1"
+#340000
+0"
+#350000
+1'
+b10 <
+1"
+#360000
+b100000100000000 A
+b10 .
+b10 D
+b10 E
+b100 =
+0"
+#370000
+0'
+1,
+b11 <
+1"
+#380000
+b1111111111111011 *
+b1111111111111011 2
+b1111111111111011 ?
+b101 0
+b10 &
+b10 I
+0"
+#390000
+0,
+b1 <
+1"
+#400000
+0"
+#410000
+b101 <
+1"
+#420000
+0"
+#430000
+1'
+b10 <
+1"
+#440000
+b1111111111111100 *
+b1111111111111100 2
+b1111111111111100 ?
+b1 )
+b1 1
+b1 @
+b10000010000000000 A
+b100 .
+b100 D
+b100 E
+b11 =
+0"
+#450000
+0'
+1,
+b11 <
+1"
+#460000
+b1111111111111000 *
+b1111111111111000 2
+b1111111111111000 ?
+b1001 0
+b100 &
+b100 I
+0"
+#470000
+0,
+b1 <
+1"
+#480000
+0"
+#490000
+b101 <
+1"
+#500000
+0"
+#510000
+1'
+b10 <
+1"
+#520000
+b1111111111111011 *
+b1111111111111011 2
+b1111111111111011 ?
+b100 )
+b100 1
+b100 @
+b1000001000000000000 A
+b1000 .
+b1000 D
+b1000 E
+b10 =
+0"
+#530000
+0'
+1,
+b11 <
+1"
+#540000
+b1111111111110011 *
+b1111111111110011 2
+b1111111111110011 ?
+b10001 0
+b1000 &
+b1000 I
+0"
+#550000
+0,
+b1 <
+1"
+#560000
+0"
+#570000
+b101 <
+1"
+#580000
+0"
+#590000
+1'
+b10 <
+1"
+#600000
+b1111111111111111 *
+b1111111111111111 2
+b1111111111111111 ?
+b10000 )
+b10000 1
+b10000 @
+b100000100000000000000 A
+b10000 .
+b10000 D
+b10000 E
+b1 =
+0"
+#610000
+0'
+1,
+b11 <
+1"
+#620000
+b1111111111101111 *
+b1111111111101111 2
+b1111111111101111 ?
+b100001 0
+b10000 &
+b10000 I
+0"
+#630000
+0,
+b1 <
+1"
+#640000
+0"
+#650000
+b101 <
+1"
+#660000
+0"
+#670000
+1'
+b10 <
+1"
+#680000
+03
+b100000 *
+b100000 2
+b100000 ?
+b1000001 )
+b1000001 1
+b1000001 @
+b10000010000000000000000 A
+b100000 .
+b100000 D
+b100000 E
+b0 =
+0"
+#690000
+0'
+1,
+b11 <
+1"
+#700000
+b0 *
+b0 2
+b0 ?
+b1000001 0
+b100000 &
+b100000 I
+1%
+0"
+#710000
+0,
+b1 <
+1"
+#720000
+0"
+#730000
+1+
+1(
+b100 <
+1"
+#740000
+13
+b1111111110111111 *
+b1111111110111111 2
+b1111111110111111 ?
+b0 )
+b0 1
+b0 @
+b100001 .
+b100001 D
+b100001 E
+b0 A
+0"
+#750000
+0+
+0(
+b101 <
+1"
+#760000
+0"
+#770000
+1/
+b110 <
+1"
+#780000
+0"
+#790000
+b1 ;
+1"
+#800000
+0"
+#810000
+b10 ;
+1"
+#820000
+0"
+#830000
+b11 ;
+1"
+#840000
+0"
+#850000
+b100 ;
+1"
+#860000
+0"
+#870000
+b101 ;
+1"
+#880000
+0"
+#890000
+b110 ;
+1"
+#900000
+0"
+#910000
+b111 ;
+1"
+#920000
+0"
+#930000
+b1000 ;
+1"
+#940000
+0"
+#950000
+b1001 ;
+1"
+#960000
+0"
+#970000
+b1010 ;
+1"
+#980000
+0"
+#990000
+b1011 ;
+1"
+#1000000
+0"
+#1010000
+b1100 ;
+1"
+#1020000
+0"
+#1030000
+b1101 ;
+1"
+#1040000
+0"
+#1050000
+b1110 ;
+1"
+#1060000
+0"
+#1070000
+b1111 ;
+1"
+#1080000
+0"
+#1090000
+b10000 ;
+1"
+#1100000
+0"
+#1110000
+b10001 ;
+1"
+#1120000
+0"
+#1130000
+b10010 ;
+1"
+#1140000
+0"
+#1150000
+b10011 ;
+1"
+#1160000
+0"
+#1170000
+b10100 ;
+1"
+#1180000
+0"
+#1190000
+b10101 ;
+1"
+#1200000
+0"

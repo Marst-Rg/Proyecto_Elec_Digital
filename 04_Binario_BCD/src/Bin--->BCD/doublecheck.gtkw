@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Tue Oct  7 06:33:15 2025
+[*]
+[dumpfile] "/home/daniel/github-classroom/Digital-II/verilogs-danesguer/digital_UN/femtoRV/basic/rtl/cores/double/double_TB.vcd"
+[dumpfile_mtime] "Tue Oct  7 06:32:37 2025"
+[dumpfile_size] 14792
+[savefile] "/home/daniel/github-classroom/Digital-II/verilogs-danesguer/digital_UN/femtoRV/basic/rtl/cores/double/doublecheck.gtkw"
+[timestart] 0
+[size] 1920 1008
+[pos] -73 -73
+*-18.000000 1032000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] double_TB.
+[treeopen] double_TB.dut.
+[sst_width] 201
+[signals_width] 424
+[sst_expanded] 1
+[sst_vpaned_height] 627
+@24
+double_TB.dut.A_reg0.A_new[15:0]
+@28
+double_TB.dut.A_reg0.ldr2
+double_TB.dut.A_reg0.A[31:0]
+@22
+double_TB.dut.A_reg0.resultado[15:0]
+double_TB.dut.checku.diff[4:0]
+double_TB.dut.checkd.diff[4:0]
+double_TB.dut.checku.diff[4:0]
+double_TB.dut.contador0.m[3:0]
+@25
+double_TB.dut.A_reg0.X[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

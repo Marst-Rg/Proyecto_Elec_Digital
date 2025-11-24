@@ -1,0 +1,6 @@
+verilog work ../sqrt.v
+verilog work ../lsr2.v
+verilog work ../lsr.v
+verilog work ../addc2.v
+verilog work ../control.v
+verilog work ../count.v

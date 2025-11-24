@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Mon Oct  6 03:57:58 2025
+[*]
+[dumpfile] "/home/daniel/digital_UN/femtoRV/basic/rtl/cores/double/double_TB.vcd"
+[dumpfile_mtime] "Mon Oct  6 03:53:16 2025"
+[dumpfile_size] 11750
+[savefile] "/home/daniel/digital_UN/femtoRV/basic/rtl/cores/double/double.gtkw"
+[timestart] 0
+[size] 1920 1008
+[pos] -91 -91
+*-16.000000 239500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] double_TB.
+[treeopen] double_TB.dut.
+[sst_width] 201
+[signals_width] 278
+[sst_expanded] 1
+[sst_vpaned_height] 296
+@22
+double_TB.dut.A_reg0.A[31:0]
+double_TB.dut.A_reg0.X[15:0]
+@28
+double_TB.dut.A_reg0.ld
+@22
+double_TB.dut.A_reg0.resultado[15:0]
+@28
+double_TB.dut.A_reg0.sh
+@200
+-
+-
+-
+-
+@23
+double_TB.dut.checku.A[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
