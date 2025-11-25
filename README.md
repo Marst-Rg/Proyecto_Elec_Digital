@@ -33,8 +33,10 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 
 
 
+
 #### Máquina de Estados (Control)
 ![Diagrama de Estados Multiplicador](01_Multiplicador/src/Multiplica/IMAGEN/DIAGRAMA%20DE%20ESTADOS_MUL.png)
+
 
 
 
