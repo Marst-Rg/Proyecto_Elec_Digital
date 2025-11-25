@@ -64,15 +64,18 @@ Explicación breve de qué se observa en la imagen.
 
 #### Diagrama de Flujo (Algoritmo)
 *Describe la lógica de pasos: Cargar registros, desplazar a la izquierda, restar divisor, verificar signo, decidir si restaurar o no.*
-![Diagrama de Flujo Divisor](./02_Divisor/src/Divide /IMG/Flujo_div.png)
+![Flujo_div](02_Divisor/src/Divide%20/IMG/Flujo_div.png)
+
 
 #### Diagrama de Bloques (Camino de Datos)
 *Muestra los registros (A, Q, M), la ALU (restador) y los multiplexores.*
-![Datapath Divisor](./assets/div_datapath.png)
+![datapath_div](02_Divisor/src/Divide%20/IMG/datapath_div.png)
+
 
 #### Máquina de Estados (Control)
 *Diagrama de la FSM que controla los desplazamientos y las restas (Estados: IDLE, SHIFT, SUB, RESTORE, END).*
-![FSM Divisor](./assets/div_fsm.png)
+![Estados_div](02_Divisor/src/Divide%20/IMG/Estados_div.png)
+
 
 ### Implementación
 El código fuente está separado en unidad de control y camino de datos para modularidad.
