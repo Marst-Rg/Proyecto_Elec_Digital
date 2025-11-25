@@ -31,13 +31,8 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 #### Diagrama de Bloques (Camino de Datos)
 ![Datapath Multiplicador](01_Multiplicador/src/Multiplica/IMAGEN/dataPath_MUL.png)
 
-
-
-
 #### Máquina de Estados (Control)
-![Diagrama de Estados Multiplicador](01_Multiplicador/src/Multiplica/IMAGEN/DIAGRAMA%20DE%20ESTADOS_MUL.png)
-
-
+![Diagrama de Estados](01_Multiplicador/src/Multiplica/IMAGEN/DIAGRAMA%20DE%20ESTADOS_MUL.png)
 
 
 ### Implementación
