@@ -29,10 +29,12 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 ![Diagrama de Flujo Multiplicador](./assets/mult_flujo.png)
 
 #### Diagrama de Bloques (Camino de Datos)
-![Datapath Multiplicador](./assets/mult_datapath.png)
+[Datapath Multiplicador](01_Multiplicador/src/Multiplica/IMAGEN/dataPath_MUL.png)
+
 
 #### Máquina de Estados (Control)
-![FSM Multiplicador](./assets/mult_fsm.png)
+[Diagrama de Estados Multiplicador](01_Multiplicador/src/Multiplica/IMAGEN/DIAGRAMA%20DE%20ESTADOS_MUL.png)
+
 
 ### Implementación
 * **Codigo:** [Codigo Multiplicación](01_Multiplicador/src/Multiplica/)
@@ -101,10 +103,12 @@ Se realizó una simulación comportamental para verificar casos de prueba, inclu
 
 ### Diseño del Sistema
 #### Diagrama de Flujo (Algoritmo)
-![Algoritmo Raíz](./assets/sqrt_flujo.png)
+[Flujo Raíz Cuadrada](03_RaizCuadrada/src/Raiz/IMG/flujo_sqrt.png)
+
 
 #### Diagrama de Bloques (Camino de Datos)
-![Datapath Raíz](./assets/sqrt_datapath.png)
+[Datapath Raíz Cuadrada](03_RaizCuadrada/src/Raiz/IMG/Datapath_sqrt.png)
+
 
 #### Máquina de Estados (Control)
 ![FSM Raíz](./assets/sqrt_fsm.png)
@@ -130,10 +134,12 @@ Descripción de la prueba: *Se verifica la raíz de 144 (resultado 12) y 150 (re
 
 ### Diseño del Sistema
 #### Diagrama de Flujo
-![Algoritmo Bin2BCD](./assets/bin2bcd_flujo.png)
+[Double Flujo BCD](04_Binario_BCD/src/Bin--->BCD/IMG/double_flujo.png)
+
 
 #### Diagrama de Bloques
-![Datapath Bin2BCD](./assets/bin2bcd_datapath.png)
+[Data Double BCD](04_Binario_BCD/src/Bin--->BCD/IMG/data_double.png)
+
 
 #### Máquina de Estados
 *(Si aplica, o explicar si es un diseño iterativo)*
