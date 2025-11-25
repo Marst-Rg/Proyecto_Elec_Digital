@@ -35,8 +35,7 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 ![FSM Multiplicador](./assets/mult_fsm.png)
 
 ### Implementación
-* **Camino de Datos:** [Ver Código](./01_Multiplicador/src/datapath.v)
-* **Unidad de Control:** [Ver Código](./01_Multiplicador/src/control_unit.v)
+* **Codigo:** [Ver Código](./01_Multiplicador /src/Multiplica)
 
 ### Simulación
 Explicación breve de qué se observa en la imagen.
