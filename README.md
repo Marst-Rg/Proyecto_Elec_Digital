@@ -158,19 +158,7 @@ Descripción de la prueba: *Se verifica la raíz de 144 (resultado 12) y 150 (re
 
 ## 5. Calculadora (Integración Final)
 
-### Especificaciones del Sistema Completo
-Descripción de la ALU (Unidad Aritmético Lógica) o el sistema central que une todos los módulos anteriores.
-* **Entradas:** Teclado matricial 4x4 / Switches.
-* **Salidas:** Displays de 7 segmentos / VGA.
-* **Operaciones Soportadas:** Suma, Resta, Multiplicación, División, Raíz.
-
-### Diagrama de Bloques General (Top Level)
-*Este diagrama muestra cómo se conectan los submódulos (instancias) entre sí.*
-![Arquitectura Calculadora](./assets/top_level_diagram.png)
-
-### Máquina de Estados Principal
-*Diagrama de la FSM que controla qué operación se realiza según la entrada del usuario.*
-![FSM Principal](./assets/main_fsm.png)
+)
 
 ### Código Fuente (Top Module)
 * **Archivo Principal:** [Top_Module.v](./06_Calculadora/src/top_calc.v)
