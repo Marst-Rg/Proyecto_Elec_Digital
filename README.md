@@ -32,9 +32,7 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 ![Datapath Multiplicador](01_Multiplicador/src/Multiplica/IMAGEN/dataPath_MUL.png)
 
 #### Máquina de Estados (Control)
-![Flujo de Estados](01_Multiplicador/src/Multiplica/IMAGEN/DIAGRAMA_DE_ESTADOS_MUL.png)
-
-
+[Flujo de Estados](01_Multiplicador/src/Multiplica/IMAGEN/DIAGRAMA_DE_ESTADOS_MUL.png)
 
 ### Implementación
 * **Codigo:** [Codigo Multiplicación](01_Multiplicador/src/Multiplica/)
