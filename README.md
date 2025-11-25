@@ -64,7 +64,7 @@ Explicación breve de qué se observa en la imagen.
 
 #### Diagrama de Flujo (Algoritmo)
 *Describe la lógica de pasos: Cargar registros, desplazar a la izquierda, restar divisor, verificar signo, decidir si restaurar o no.*
-![Diagrama de Flujo Divisor](./assets/div_flujo.png)
+![Diagrama de Flujo Divisor](./02_Divisor/src/Divide /IMG/Flujo_div.png)
 
 #### Diagrama de Bloques (Camino de Datos)
 *Muestra los registros (A, Q, M), la ALU (restador) y los multiplexores.*
