@@ -41,7 +41,7 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 
 ### Simulación
 Explicación breve de qué se observa en la imagen.
-![Simulación Multiplicador](./assets/mult_sim.png)
+![Simulación del Multiplicador](Simu/Sim_Mul.png)
 
 ### Pruebas en FPGA
 [Ver Video de Funcionamiento en YouTube](LINK_DEL_VIDEO_AQUI)
@@ -87,7 +87,7 @@ El código fuente está separado en unidad de control y camino de datos para mod
 ### Simulación
 Se realizó una simulación comportamental para verificar casos de prueba, incluyendo la división por cero (si tu circuito la maneja).
 * **Caso de prueba:** Dividendo = 13 (1101), Divisor = 4 (0100) → Cociente = 3, Residuo = 1.
-![Simulación Divisor](./assets/div_sim.png)
+![Simulación del Divisor](Simu/SimM_div.png)
 
 
 
@@ -120,10 +120,8 @@ Se realizó una simulación comportamental para verificar casos de prueba, inclu
 
 ### Simulación
 Descripción de la prueba: *Se verifica la raíz de 144 (resultado 12) y 150 (resultado 12, residuo 6).*
-![Simulación Raíz](./assets/sqrt_sim.png)
+![Simulación de la Raíz Cuadrada](Simu/Sim_sqrt.png)
 
-### Pruebas en FPGA
-[Ver Video de Funcionamiento](./assets/video_sqrt_link.md)
 
 ---
 
@@ -152,7 +150,7 @@ Descripción de la prueba: *Se verifica la raíz de 144 (resultado 12) y 150 (re
 * **Código Fuente:** [Ver Código](./04_Binario_BCD/src/bin_to_bcd.v)
 
 ### Simulación
-![Simulación Bin2BCD](./assets/bin2bcd_sim.png)
+![Simulación binario a BCD](Simu/Sim_double.png)
 
 ---
 
