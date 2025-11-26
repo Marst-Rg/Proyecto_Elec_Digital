@@ -133,7 +133,11 @@ Residuo (rem[15:0]): 2
 * **Unidad de Control:** [Ver Código](./03_Raiz_Cuadrada/src/control_unit.v)
 
 ### Simulación
-Descripción de la prueba: *Se verifica la raíz de 144 (resultado 12) y 150 (resultado 12, residuo 6).*
+La simulación temporal corresponde al módulo RTL de raíz cuadrada, que ejecuta el cálculo de $\sqrt{1089} = 33$.
+
+Tras la activación de la señal init, el registro de entrada (A[15:0]) se carga con el radicando 1089, iniciando la operación. El circuito implementa un algoritmo de raíz cuadrada entera por aproximaciones sucesivas, gestionado por la máquina de estados. Este proceso es iterativo, y en cada ciclo de reloj (clk), las señales de control como w_sh (Desplazamiento) y w_ld (Carga) se activan secuencialmente para alinear los registros y actualizar el resultado parcial. 
+
+El registro de salida (out_r[15:0]) evoluciona progresivamente a medida que el algoritmo determina cada bit de la raíz (pasando por 1, 2, 4, 8, 16, 32). Finalmente, el proceso se completa y el valor se estabiliza en 33.
 ![Simulación de la Raíz Cuadrada](Simu/Sim_sqrt.png)
 
 
