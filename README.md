@@ -168,6 +168,11 @@ El registro de salida (out_r[15:0]) evoluciona progresivamente a medida que el a
 * **Código Fuente:** [Ver Código](./04_Binario_BCD/src/bin_to_bcd.v)
 
 ### Simulación
+La simulación temporal corresponde al módulo RTL de conversión Binario a BCD (Decimal Codificado en Binario), ejecutando el cálculo para la entrada binaria 15 (0000000000001111).
+
+El proceso se inicializa con la carga de la entrada binaria en el registro A[15:0]. El algoritmo se basa en el método iterativo Shift-and-Add-3
+
+Que se requiere 16 ciclos de reloj para procesar los 16 bits de entrada. En cada ciclo, la señal w_sh (Desplazamiento) se activa para mover los bits hacia la izquierda. Las señales de corrección w_dec se activan solo si algún dígito BCD parcial supera el valor de 4 (lo que no ocurre frecuentemente con números tan pequeños como 15), aplicando la regla de "Sumar 3". Al completar las iteraciones, el registro de resultado (C[15:0]) se estabiliza mostrando el valor BCD de 15 (0001 0101).
 ![Simulación binario a BCD](Simu/Sim_double.png)
 
 ---
