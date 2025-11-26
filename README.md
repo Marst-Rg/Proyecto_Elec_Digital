@@ -90,8 +90,17 @@ El código fuente está separado en unidad de control y camino de datos para mod
 * **Módulo Superior (Top):** [Ver Código](./02_Divisor/src/top_divisor.v)
 
 ### Simulación
-Se realizó una simulación comportamental para verificar casos de prueba, incluyendo la división por cero (si tu circuito la maneja).
-* **Caso de prueba:** Dividendo = 13 (1101), Divisor = 4 (0100) → Cociente = 3, Residuo = 1.
+La simulación temporal corresponde al módulo RTL de división, ejecutando la operación $127 \div 25$ ($Dividendo=127$, $Divisor=25$).
+
+|Tras el pulso de rst y la activación de init, los operandos se cargan ($127$ y $25$), y la máquina de estados pasa del estado de reposo (state=0) al estado de inicio (state=1).
+
+El algoritmo implementado es de resta y desplazamiento (shift-and-subtract), que se ejecuta en un bucle de estados iterativo. En cada ciclo de reloj, la máquina de estados gestiona si se realiza una resta (sub=1) y el desplazamiento (sh=1) del residuo y cociente parcial.Resultado: Al finalizar el proceso iterativo, la máquina de estados alcanza el estado final (state=5), y la señal done se activa. Los resultados finales se estabilizan en
+
+:Cociente (q[15:0]): 5
+
+Residuo (rem[15:0]): 2
+
+   Estos resultados validan la correcta implementación del algoritmo, ya que $127 = (5 \times 25) + 2$.
 ![Simulación del Divisor](Simu/SimM_div.png)
 
 
