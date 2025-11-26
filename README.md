@@ -41,8 +41,10 @@ Descripción breve de los bits de entrada, salida y el método utilizado (ej: Al
 
 
 ### Simulación
-La figura muestra la simulación temporal del módulo RTL de multiplicación para la operación $247 \times 127$.Inicialización: Tras un pulso de reset (rst) y la activación de la señal de inicio (init), el módulo carga los operandos $A=247$ y $B=127$, y la máquina de estados pasa al estado de inicio (state=1).\\
-El cálculo se realiza mediante un algoritmo de multiplicación por shift-and-add. Se observa un bucle de estados (state transiciona entre 1, 3, 2, 3) que se repite 8 veces (o el número de bits del multiplicador B). Las señales de control add (suma) y sh (desplazamiento) se activan de forma síncrona con el reloj (clk) para realizar las sumas parciales y los desplazamientos necesarios. El registro de producto parcial (pp[31:0]) refleja el resultado acumulado en cada ciclo, pasando por valores intermedios como 741, 1729, 3705, etc.\\
+La figura muestra la simulación temporal del módulo RTL de multiplicación para la operación $247 \times 127$.Inicialización: Tras un pulso de reset (rst) y la activación de la señal de inicio (init), el módulo carga los operandos $A=247$ y $B=127$, y la máquina de estados pasa al estado de inicio (state=1).
+
+El cálculo se realiza mediante un algoritmo de multiplicación por shift-and-add. Se observa un bucle de estados (state transiciona entre 1, 3, 2, 3) que se repite 8 veces (o el número de bits del multiplicador B). Las señales de control add (suma) y sh (desplazamiento) se activan de forma síncrona con el reloj (clk) para realizar las sumas parciales y los desplazamientos necesarios. El registro de producto parcial (pp[31:0]) refleja el resultado acumulado en cada ciclo, pasando por valores intermedios como 741, 1729, 3705, etc.
+
 Una vez completadas las iteraciones, la máquina de estados transiciona al estado final (state=4), y la señal done se activa. El resultado final se encuentra disponible en el registro pp[31:0], mostrando el valor correcto de 31369 ($247 \times 127$).
 ![Simulación del Multiplicador](Simu/Sim_Mul.png)
 
