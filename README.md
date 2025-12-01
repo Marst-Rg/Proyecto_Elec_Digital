@@ -74,13 +74,14 @@ Una vez completadas las iteraciones, la máquina de estados transiciona al estad
 
 
 #### Diagrama de Bloques (Camino de Datos)
-*Muestra los registros (A, Q, M), la ALU (restador) y los multiplexores.*
+*Diagrama de la FSM que controla los desplazamientos y las restas.*
+![Estados_div](02_Divisor/src/Divide%20/IMG/Estados_div1.png)
+
+
+#### Datapath
+*Muestra los registros, la ALU y los multiplexores.*
 ![datapath_div](02_Divisor/src/Divide%20/IMG/datapath_div1.png)
 
-
-#### Máquina de Estados (Control)
-*Diagrama de la FSM que controla los desplazamientos y las restas (Estados: IDLE, SHIFT, SUB, RESTORE, END).*
-![Estados_div](02_Divisor/src/Divide%20/IMG/Estados_div1.png)
 
 
 ### Implementación
@@ -154,7 +155,7 @@ El registro de salida (out_r[15:0]) evoluciona progresivamente a medida que el a
 
 
 #### Máquina de Estados
-*(Si aplica, o explicar si es un diseño iterativo)*
+
 ![FSM Bin2BCD](./assets/bin2bcd_fsm.png)
 
 
