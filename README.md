@@ -70,7 +70,7 @@ Una vez completadas las iteraciones, la máquina de estados transiciona al estad
 
 #### Diagrama de Flujo (Algoritmo)
 *Describe la lógica de pasos: Cargar registros, desplazar a la izquierda, restar divisor, verificar signo, decidir si restaurar o no.*
-![Diagrama de Estados del Divisor](./02_Divisor/src/Divide%20/IMG/Estados_div1.png)
+![Diagrama de Estados del Divisor](./02_Divisor/src/Divide%20/IMG/Flujo_div1.jpg)
 
 
 #### Diagrama de Bloques (Camino de Datos)
