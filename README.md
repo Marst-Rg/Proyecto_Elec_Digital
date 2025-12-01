@@ -70,7 +70,7 @@ Una vez completadas las iteraciones, la máquina de estados transiciona al estad
 
 #### Diagrama de Flujo (Algoritmo)
 *Describe la lógica de pasos: Cargar registros, desplazar a la izquierda, restar divisor, verificar signo, decidir si restaurar o no.*
-![Flujo_div](02_Divisor/src/Divide%20/IMG/Flujo_div1.png)
+![Diagrama de Estados del Divisor](./02_Divisor/src/Divide%20/IMG/Estados_div1.png)
 
 
 #### Diagrama de Bloques (Camino de Datos)
@@ -118,15 +118,14 @@ Residuo (rem[15:0]): 2
 #### Diagrama de Flujo (Algoritmo)
 ![Flujo Sqrt](03_RaizCuadrada/src/Raiz/IMG/flujo_sqrt1.png)
 
+#### Diagrama de Estados 
+![FSM Raíz](./assets/sqrt_fsm.png)
 
-
-#### Diagrama de Bloques (Camino de Datos)
+#### Datapath
 ![Datapath Sqrt](03_RaizCuadrada/src/Raiz/IMG/Datapath_sqrt1.png)
 
 
 
-#### Máquina de Estados (Control)
-![FSM Raíz](./assets/sqrt_fsm.png)
 
 ### Implementación
 * **Camino de Datos:** [Ver Código](./03_Raiz_Cuadrada/src/datapath.v)
@@ -154,15 +153,14 @@ El registro de salida (out_r[15:0]) evoluciona progresivamente a medida que el a
 ![Flujo Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/double_flujo1.png)
 
 
-
-#### Diagrama de Bloques
-![Datapath Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/data_double1.png)
-
-
-
 #### Máquina de Estados
 *(Si aplica, o explicar si es un diseño iterativo)*
 ![FSM Bin2BCD](./assets/bin2bcd_fsm.png)
+
+
+#### DataPath
+![Datapath Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/data_double1.png)
+
 
 ### Implementación
 * **Código Fuente:** [Ver Código](./04_Binario_BCD/src/bin_to_bcd.v)
