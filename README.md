@@ -195,3 +195,69 @@ Prueba completa en la FPGA con todas las operaciones.
 [**VER VIDEO EN YOUTUBE**](LINK_AQUI)
 
 ---
+## Proyecto Final
+Este proyecto consiste en el diseño e implementación de un sistema digital capaz de reproducir animaciones cortas (formato GIF) en una **Matriz de LED [64x64]**. El sistema lee los cuadros de animación almacenados en memoria y los despliega secuencialmente controlando la temporización y el barrido de la matriz.
+
+El diseño se ha realizado utilizando **[Verilog]** y se ha implementado en la tarjeta de desarrollo **[FPGA Colorligth 5A]**.
+
+---
+
+##  Especificaciones Técnicas
+* **Hardware:** [FPGA Basys 3 / Cyclone II / Otro], Matriz LED [Modelo, ej: MAX7219].
+* **Lenguaje:** [Verilog].
+* **Frecuencia de Reloj:** [Ej: 50 MHz con divisor de frecuencia a 1 Hz para la animación].
+
+---
+## Diseño y Arquitectura
+El sistema se divide en dos grandes bloques: la Unidad de Control (FSM) y el Camino de Datos (Datapath).
+
+### 1. Diagrama de Flujo (Lógica General)
+Este diagrama representa la lógica de alto nivel: desde el inicio del sistema, la carga de la memoria ROM/RAM, hasta el bucle de visualización de filas y columnas.
+
+![Diagrama de Flujo](./docs/diagrama_flujo.png)
+*(Aquí va tu imagen mostrando cómo el sistema decide cuándo cambiar de frame)*
+
+### 2. Máquina de Estados (FSM)
+La Unidad de Control gestiona las transiciones entre los estados de *Reset*, *Lectura de Memoria*, *Envío de Datos* y *Actualización de Display*.
+
+![Carta ASM o Diagrama de Estados](./docs/fsm_diagram.png)
+> **Nota:** El sistema utiliza una máquina de estados tipo [Moore/Mealy] para sincronizar el barrido de la matriz.
+
+### 3. Datapath (Camino de Datos)
+Aquí se detallan los contadores (para las direcciones de memoria y barrido de filas), los multiplexores y los registros de desplazamiento utilizados para enviar los bits a la matriz.
+
+![Datapath](./docs/datapath.png)
+
+---
+
+## Código y Módulos
+La estructura del proyecto es modular. Los archivos principales son:
+
+| Archivo | Descripción |
+| :--- | :--- |
+| `top_level.vhd` | Módulo principal que conecta la FSM y el Datapath. |
+| `clock_div.vhd` | Divisor de frecuencia para generar el refresco visual y la velocidad del GIF. |
+| `rom_memory.vhd` | Contiene la información binaria de los cuadros del GIF. |
+| `led_driver.vhd` | Controlador de bajo nivel para la matriz LED. |
+
+---
+
+## 📊 Simulación
+Antes de la implementación física, se validó el comportamiento de las señales críticas (reloj, enable, address bus) mediante simulación.
+
+![Waveforms](./docs/simulacion_waveforms.png)
+*En la imagen se observa cómo al cambiar la dirección de memoria, los datos de salida se actualizan en el siguiente flanco de reloj.*
+
+---
+
+##  Demostración (Funcionamiento)
+A continuación se muestra el resultado final del proyecto en funcionamiento.
+
+### Video del Proyecto
+[![Ver video en YouTube](https://img.youtube.com/vi/TU_ID_DEL_VIDEO/0.jpg)](https://www.youtube.com/watch?v=TU_ID_DEL_VIDEO)
+*(Haz clic en la imagen para ver el video)*
+
+### GIF de Muestra
+![GIF Funcionando](./docs/demo_funcionamiento.gif)
+
+---
