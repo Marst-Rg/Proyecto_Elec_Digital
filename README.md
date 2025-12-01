@@ -120,7 +120,7 @@ Residuo (rem[15:0]): 2
 ![Flujo Sqrt](03_RaizCuadrada/src/Raiz/IMG/flujo_sqrt1.png)
 
 #### Diagrama de Estados 
-![FSM Raíz](./assets/sqrt_fsm.png)
+![Diagrama de Estados - Raíz Cuadrada](./03_RaizCuadrada/src/Raiz/IMG/Estados_raiz1.jpeg)
 
 #### Datapath
 ![Datapath Sqrt](03_RaizCuadrada/src/Raiz/IMG/Datapath_sqrt1.png)
