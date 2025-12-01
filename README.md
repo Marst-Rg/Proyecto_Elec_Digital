@@ -220,7 +220,7 @@ Este diagrama representa la lógica de alto nivel: desde el inicio del sistema, 
 ### 2. Máquina de Estados (FSM)
 La Unidad de Control gestiona las transiciones entre los estados de *Reset*, *Lectura de Memoria*, *Envío de Datos* y *Actualización de Display*.
 
-![Carta ASM o Diagrama de Estados](./docs/fsm_diagram.png)
+![Diagrama de Estados FSM](./Reproductor_GIF/Estados_GIF.jpeg)
 > **Nota:** El sistema utiliza una máquina de estados tipo [Moore/Mealy] para sincronizar el barrido de la matriz.
 
 ### 3. Datapath (Camino de Datos)
