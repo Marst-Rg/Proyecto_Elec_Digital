@@ -214,7 +214,7 @@ El sistema se divide en dos grandes bloques: la Unidad de Control (FSM) y el Cam
 ### 1. Diagrama de Flujo (Lógica General)
 Este diagrama representa la lógica de alto nivel: desde el inicio del sistema, la carga de la memoria ROM/RAM, hasta el bucle de visualización de filas y columnas.
 
-![Diagrama de Flujo](./docs/diagrama_flujo.png)
+![Diagrama de Flujo Principal](./Reproductor_GIF/Flujo_GIF.jpeg)
 *(Aquí va tu imagen mostrando cómo el sistema decide cuándo cambiar de frame)*
 
 ### 2. Máquina de Estados (FSM)
