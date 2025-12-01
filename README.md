@@ -156,7 +156,7 @@ El registro de salida (out_r[15:0]) evoluciona progresivamente a medida que el a
 
 #### Máquina de Estados
 
-![FSM Bin2BCD](./assets/bin2bcd_fsm.png)
+![Estados Double Dabble](./04_Binario_BCD/src/Bin---%3EBCD/IMG/Estados_double1.png)
 
 
 #### DataPath
@@ -222,10 +222,10 @@ La Unidad de Control gestiona las transiciones entre los estados de *Reset*, *Le
 ![Diagrama de Estados FSM](./Reproductor_GIF/Estados_GIF.jpeg)
 > **Nota:** El sistema utiliza una máquina de estados tipo [Moore/Mealy] para sincronizar el barrido de la matriz.
 
-### 3. Datapath (Camino de Datos)
+### 3. Datapath 
 Aquí se detallan los contadores (para las direcciones de memoria y barrido de filas), los multiplexores y los registros de desplazamiento utilizados para enviar los bits a la matriz.
 
-![Datapath](./docs/datapath.png)
+![Datapath del Proyecto](./Reproductor_GIF/datapath%20proyexto.drawio.png)
 
 ---
 
