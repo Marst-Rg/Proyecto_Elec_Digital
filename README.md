@@ -70,17 +70,17 @@ Una vez completadas las iteraciones, la máquina de estados transiciona al estad
 
 #### Diagrama de Flujo (Algoritmo)
 *Describe la lógica de pasos: Cargar registros, desplazar a la izquierda, restar divisor, verificar signo, decidir si restaurar o no.*
-![Flujo_div](02_Divisor/src/Divide%20/IMG/Flujo_div.png)
+![Flujo_div](02_Divisor/src/Divide%20/IMG/Flujo_div1.png)
 
 
 #### Diagrama de Bloques (Camino de Datos)
 *Muestra los registros (A, Q, M), la ALU (restador) y los multiplexores.*
-![datapath_div](02_Divisor/src/Divide%20/IMG/datapath_div.png)
+![datapath_div](02_Divisor/src/Divide%20/IMG/datapath_div1.png)
 
 
 #### Máquina de Estados (Control)
 *Diagrama de la FSM que controla los desplazamientos y las restas (Estados: IDLE, SHIFT, SUB, RESTORE, END).*
-![Estados_div](02_Divisor/src/Divide%20/IMG/Estados_div.png)
+![Estados_div](02_Divisor/src/Divide%20/IMG/Estados_div1.png)
 
 
 ### Implementación
@@ -116,12 +116,12 @@ Residuo (rem[15:0]): 2
 
 ### Diseño del Sistema
 #### Diagrama de Flujo (Algoritmo)
-![Flujo Sqrt](03_RaizCuadrada/src/Raiz/IMG/flujo_sqrt.png)
+![Flujo Sqrt](03_RaizCuadrada/src/Raiz/IMG/flujo_sqrt1.png)
 
 
 
 #### Diagrama de Bloques (Camino de Datos)
-![Datapath Sqrt](03_RaizCuadrada/src/Raiz/IMG/Datapath_sqrt.png)
+![Datapath Sqrt](03_RaizCuadrada/src/Raiz/IMG/Datapath_sqrt1.png)
 
 
 
@@ -151,12 +151,12 @@ El registro de salida (out_r[15:0]) evoluciona progresivamente a medida que el a
 
 ### Diseño del Sistema
 #### Diagrama de Flujo
-![Flujo Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/double_flujo.png)
+![Flujo Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/double_flujo1.png)
 
 
 
 #### Diagrama de Bloques
-![Datapath Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/data_double.png)
+![Datapath Doble BCD](04_Binario_BCD/src/Bin---%3EBCD/IMG/data_double1.png)
 
 
 
