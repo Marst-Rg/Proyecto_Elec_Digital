@@ -241,7 +241,7 @@ Este módulo implementa la visualización de animaciones almacenadas en memoria 
 | **Contador** | **[count.v](./GIF_code/count.v)** | **Auxiliar.** Contador genérico utilizado para el barrido de direcciones de memoria y la temporización. |
 | **Compilación** | **[Makefile](./GIF_code/Makefile)** | **Script de Construcción.** Automatiza el flujo de síntesis y rutado para generar el bitstream del proyecto. |
 
-
+Para probar el proyecto completo, asegúrese de tener todos los archivos en la misma carpeta de trabajo o utilizar el `Makefile` proporcionado para gestionar las dependencias.
 
 ### Simulación
 *Se verifica el cambio de `frame_actual` cada vez que el contador alcanza `FRAME_SPEED`.*
