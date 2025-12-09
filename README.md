@@ -233,13 +233,13 @@ Aquí se detallan los contadores (para las direcciones de memoria y barrido de f
 
 Este módulo implementa la visualización de animaciones almacenadas en memoria sobre una matriz de LEDs, controlando el barrido y la transición de cuadros (frames).
 
-| Módulo | Tipo | Descripción y Enlace al Código |
-| :--- | :---: | :--- |
-| **Top Module** | Sistema | **[led_panel_gif.v](./07_Reproductor_GIF/src/led_panel_gif.v)**<br>Módulo principal. Coordina el barrido de filas/columnas (`count.v`), instancia la memoria y genera las señales RGB para la matriz. |
-| **Controlador** | FSM | **[gif_controller.v](./07_Reproductor_GIF/src/gif_controller.v)**<br>Gestiona el tiempo de visualización de cada frame. Genera la señal `frame_changed` y selecciona el índice del cuadro actual. |
-| **Memoria** | ROM/RAM | **[memory_gif.v](./07_Reproductor_GIF/src/memory_gif.v)**<br>Almacena los datos de los 4 frames (imágenes) y entrega los datos RGB según la dirección del píxel y el frame seleccionado. |
-| **Contador** | Auxiliar | **[count.v](./07_Reproductor_GIF/src/count.v)**<br>Contador genérico utilizado para la sincronización y el barrido de direcciones de memoria. |
-| **Compilación** | Script | **[Makefile](./07_Reproductor_GIF/src/Makefile)**<br>Automatización para síntesis y PnR (Gowin/Yosys). |
+| Módulo | Archivo (Click para ver) | Descripción |
+| :--- | :--- | :--- |
+| **Top Module** | **[led_panel_gif.v](./GIF_code/led_panel_gif.v)** | **Módulo Principal.** Integra el controlador de cuadros, la memoria y la lógica de barrido de la matriz LED. Genera las señales de control RGB y reloj. |
+| **Controlador** | **[gif_controller.v](./GIF_code/gif_controller.v)** | **Máquina de Estados.** Controla el tiempo de visualización de cada frame (ajustable con `FRAME_SPEED`). Indica cuándo cambiar al siguiente cuadro de la animación. 
+| **Memoria** | **[memory_gif.v](./GIF_code/memory_gif.v)** | **Almacenamiento.** Contiene la información de color de los frames (imágenes) de la animación y permite la lectura secuencial de los píxeles. |
+| **Contador** | **[count.v](./GIF_code/count.v)** | **Auxiliar.** Contador genérico utilizado para el barrido de direcciones de memoria y la temporización. |
+| **Compilación** | **[Makefile](./GIF_code/Makefile)** | **Script de Construcción.** Automatiza el flujo de síntesis y rutado para generar el bitstream del proyecto. |
 
 
 
