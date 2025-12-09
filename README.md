@@ -229,34 +229,25 @@ Aquí se detallan los contadores (para las direcciones de memoria y barrido de f
 
 ---
 
-## Código y Módulos
-La estructura del proyecto es modular. Los archivos principales son:
+### Módulos Implementados
 
-| Archivo | Descripción |
-| :--- | :--- |
-| `top_level.vhd` | Módulo principal que conecta la FSM y el Datapath. |
-| `clock_div.vhd` | Divisor de frecuencia para generar el refresco visual y la velocidad del GIF. |
-| `rom_memory.vhd` | Contiene la información binaria de los cuadros del GIF. |
-| `led_driver.vhd` | Controlador de bajo nivel para la matriz LED. |
+Este módulo implementa la visualización de animaciones almacenadas en memoria sobre una matriz de LEDs, controlando el barrido y la transición de cuadros (frames).
 
----
+| Módulo | Tipo | Descripción y Enlace al Código |
+| :--- | :---: | :--- |
+| **Top Module** | Sistema | **[led_panel_gif.v](./07_Reproductor_GIF/src/led_panel_gif.v)**<br>Módulo principal. Coordina el barrido de filas/columnas (`count.v`), instancia la memoria y genera las señales RGB para la matriz. |
+| **Controlador** | FSM | **[gif_controller.v](./07_Reproductor_GIF/src/gif_controller.v)**<br>Gestiona el tiempo de visualización de cada frame. Genera la señal `frame_changed` y selecciona el índice del cuadro actual. |
+| **Memoria** | ROM/RAM | **[memory_gif.v](./07_Reproductor_GIF/src/memory_gif.v)**<br>Almacena los datos de los 4 frames (imágenes) y entrega los datos RGB según la dirección del píxel y el frame seleccionado. |
+| **Contador** | Auxiliar | **[count.v](./07_Reproductor_GIF/src/count.v)**<br>Contador genérico utilizado para la sincronización y el barrido de direcciones de memoria. |
+| **Compilación** | Script | **[Makefile](./07_Reproductor_GIF/src/Makefile)**<br>Automatización para síntesis y PnR (Gowin/Yosys). |
 
-## 📊 Simulación
-Antes de la implementación física, se validó el comportamiento de las señales críticas (reloj, enable, address bus) mediante simulación.
 
-![Waveforms](./docs/simulacion_waveforms.png)
-*En la imagen se observa cómo al cambiar la dirección de memoria, los datos de salida se actualizan en el siguiente flanco de reloj.*
 
----
+### Simulación
+*Se verifica el cambio de `frame_actual` cada vez que el contador alcanza `FRAME_SPEED`.*
+![Simulación GIF](./assets/gif_sim.png)
 
-##  Demostración (Funcionamiento)
-A continuación se muestra el resultado final del proyecto en funcionamiento.
-
-### Video del Proyecto
-[![Ver video en YouTube](https://img.youtube.com/vi/TU_ID_DEL_VIDEO/0.jpg)](https://www.youtube.com/watch?v=TU_ID_DEL_VIDEO)
-*(Haz clic en la imagen para ver el video)*
-
-### GIF de Muestra
-![GIF Funcionando](./docs/demo_funcionamiento.gif)
+### Demostración
+[**▶️ Ver Video del GIF funcionando en FPGA**](LINK_DEL_VIDEO)
 
 ---
