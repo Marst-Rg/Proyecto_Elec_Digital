@@ -243,11 +243,16 @@ Este módulo implementa la visualización de animaciones almacenadas en memoria 
 
 Para probar el proyecto completo, asegúrese de tener todos los archivos en la misma carpeta de trabajo o utilizar el `Makefile` proporcionado para gestionar las dependencias.
 
-### Simulación
-*Se verifica el cambio de `frame_actual` cada vez que el contador alcanza `FRAME_SPEED`.*
-![Simulación GIF](./assets/gif_sim.png)
 
-### Demostración
-[**▶️ Ver Video del GIF funcionando en FPGA**](LINK_DEL_VIDEO)
+## 6. ADC
+# Enlaces a las imágenes en la carpeta IMG
+
+Aquí están los vínculos a las imágenes dentro de la carpeta `ADC/IMG`:
+
+* [estados_adc_clock.jpeg](https://github.com/NOMBRE_USUARIO/Proyecto_Elec_Digital/blob/RAMA/ADC/IMG/estados_adc_clock.jpeg)
+* [estados_wait_adc.jpeg](https://github.com/NOMBRE_USUARIO/Proyecto_Elec_Digital/blob/RAMA/ADC/IMG/estados_wait_adc.jpeg)
+* [flujo_ADC.jpeg](https://github.com/NOMBRE_USUARIO/Proyecto_Elec_Digital/blob/RAMA/ADC/IMG/flujo_ADC.jpeg)
+* [reloj_adc.jpeg](https://github.com/NOMBRE_USUARIO/Proyecto_Elec_Digital/blob/RAMA/ADC/IMG/reloj_adc.jpeg)
+* [wait_adc.jpeg](https://github.com/NOMBRE_USUARIO/Proyecto_Elec_Digital/blob/RAMA/ADC/IMG/wait_adc.jpeg)
 
 ---
