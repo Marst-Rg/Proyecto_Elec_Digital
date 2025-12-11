@@ -1,0 +1,54 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33+6 (git sha1 41b34a193, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1694128612374/work=/usr/local/src/conda/yosys-0.33_7_g41b34a193 -fdebug-prefix-map=/home/mayito/miniconda3/envs/digital=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
+
+
+-- Running command `read_verilog peripheral_adc_system_top.v adc.v clock_generator.v wait_signal.v adc_system_top.v; \
+              synth_ecp5 -top peripheral_adc_system_top; \
+              write_json build/adc_system_top.json; \
+              write_verilog build/adc_system_top_synth.v' --
+
+1. Executing Verilog-2005 frontend: peripheral_adc_system_top.v
+Parsing Verilog input from `peripheral_adc_system_top.v' to AST representation.
+Generating RTLIL representation for module `\peripheral_adc_system_top'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: adc.v
+Parsing Verilog input from `adc.v' to AST representation.
+Generating RTLIL representation for module `\adc'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: clock_generator.v
+Parsing Verilog input from `clock_generator.v' to AST representation.
+Generating RTLIL representation for module `\clock_generator'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: wait_signal.v
+Parsing Verilog input from `wait_signal.v' to AST representation.
+Generating RTLIL representation for module `\wait_signal'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: adc_system_top.v
+Parsing Verilog input from `adc_system_top.v' to AST representation.
+Generating RTLIL representation for module `\adc_system_top'.
+Successfully finished Verilog frontend.
+ERROR: No such command: \ (type 'help' for a command overview)

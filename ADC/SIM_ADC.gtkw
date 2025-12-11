@@ -1,0 +1,53 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Sun Dec  7 06:46:20 2025
+[*]
+[dumpfile] "/home/mayito/digital_UN/femtoRV/basic/rtl/cores/ ADC/adc_system_top_TB.vcd"
+[dumpfile_mtime] "Sun Dec  7 06:38:09 2025"
+[dumpfile_size] 8722
+[savefile] "/home/mayito/digital_UN/femtoRV/basic/rtl/cores/ ADC/SIM_ADC.gtkw"
+[timestart] 0
+[size] 1854 1131
+[pos] -101 -101
+*-20.000000 728000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] adc_system_top_TB.
+[treeopen] adc_system_top_TB.DUT.
+[sst_width] 216
+[signals_width] 194
+[sst_expanded] 1
+[sst_vpaned_height] 337
+@28
+adc_system_top_TB.clk
+adc_system_top_TB.clk_adc
+adc_system_top_TB.reset
+adc_system_top_TB.init_signal
+adc_system_top_TB.oe
+adc_system_top_TB.eoc
+@c00028
+adc_system_top_TB.data_adc_in[7:0]
+@28
+(0)adc_system_top_TB.data_adc_in[7:0]
+(1)adc_system_top_TB.data_adc_in[7:0]
+(2)adc_system_top_TB.data_adc_in[7:0]
+(3)adc_system_top_TB.data_adc_in[7:0]
+(4)adc_system_top_TB.data_adc_in[7:0]
+(5)adc_system_top_TB.data_adc_in[7:0]
+(6)adc_system_top_TB.data_adc_in[7:0]
+(7)adc_system_top_TB.data_adc_in[7:0]
+@1401208
+-group_end
+@800028
+adc_system_top_TB.data_out[7:0]
+@28
+(0)adc_system_top_TB.data_out[7:0]
+(1)adc_system_top_TB.data_out[7:0]
+(2)adc_system_top_TB.data_out[7:0]
+(3)adc_system_top_TB.data_out[7:0]
+(4)adc_system_top_TB.data_out[7:0]
+(5)adc_system_top_TB.data_out[7:0]
+(6)adc_system_top_TB.data_out[7:0]
+(7)adc_system_top_TB.data_out[7:0]
+@1001208
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0
