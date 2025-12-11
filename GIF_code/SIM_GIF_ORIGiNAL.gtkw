@@ -1,0 +1,55 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Thu Dec  4 07:39:14 2025
+[*]
+[dumpfile] "/home/daniel/Escritorio/digital_UN/femtoRV/basic/rtl/cores/Led_panel_12bpp/led_panel_gif_TB.vcd"
+[dumpfile_mtime] "Thu Dec  4 07:37:40 2025"
+[dumpfile_size] 15708568
+[savefile] "/home/daniel/Escritorio/digital_UN/femtoRV/basic/rtl/cores/Led_panel_12bpp/SIM_GIF_ORIGiNAL.gtkw"
+[timestart] 0
+[size] 1920 1008
+[pos] -91 -91
+*-25.000000 58000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] led_panel_gif_TB.
+[treeopen] led_panel_gif_TB.uut.
+[sst_width] 242
+[signals_width] 320
+[sst_expanded] 1
+[sst_vpaned_height] 627
+@28
+led_panel_gif_TB.clk
+led_panel_gif_TB.init
+@c00028
+led_panel_gif_TB.current_frame[1:0]
+@28
+(0)led_panel_gif_TB.current_frame[1:0]
+(1)led_panel_gif_TB.current_frame[1:0]
+@1401200
+-group_end
+@28
+led_panel_gif_TB.frame_changed
+led_panel_gif_TB.RGB0[2:0]
+led_panel_gif_TB.RGB1[2:0]
+@22
+led_panel_gif_TB.ROW[4:0]
+@28
+led_panel_gif_TB.uut.ctrl0.rst
+led_panel_gif_TB.uut.mux0.sel[1:0]
+@22
+led_panel_gif_TB.uut.ctrl0.state[3:0]
+@820
+led_panel_gif_TB.uut.ctrl0.state_name[320:1]
+@200
+-
+-gir_control
+@28
+led_panel_gif_TB.uut.gif_ctrl.enable
+led_panel_gif_TB.uut.init
+@24
+led_panel_gif_TB.uut.gif_ctrl.VELOCIDAD
+@22
+led_panel_gif_TB.uut.gif_ctrl.frame_actual[3:0]
+@25
+led_panel_gif_TB.uut.gif_ctrl.refresh_counter[24:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,10 +1,10 @@
 TARGET = led_panel_gif
 TOP    = led_panel_gif
 
-# Celdas de simulación para Ice40
+
 ICE40_SIM_CELLS=$(shell yosys-config --datdir/ice40/cells_sim.v)
 
-# Archivos comunes del proyecto
+
 COMM_OBJS += count.v 
 COMM_OBJS += ctrl_lp4k.v
 COMM_OBJS += comp.v
@@ -16,11 +16,11 @@ COMM_OBJS += led_panel_gif.v
 
 BUILD_DIR = build
 
-# Script TCL para Gowin
+
 TCL_SCRIPT = auto_generated.tcl
 GOWIN_BOARD ?= primer_25k
 
-# Configuración del dispositivo según la tarjeta
+
 ifeq ($(GOWIN_BOARD),nano_20k)
     DEVICE = GW2AR-LV18QN88C8/I7
     FAMILY = GW2AR-18C
@@ -65,9 +65,7 @@ help:
 	@echo "  frame2_image0.hex, frame2_image1.hex"
 	@echo "  frame3_image0.hex, frame3_image1.hex"
 
-########################################################
-##                 CONVERSIÓN GIF                     ##
-########################################################
+
 
 convert_gif:
 	@if [ -z "$(GIF)" ]; then \
@@ -88,9 +86,7 @@ check_hex_files:
 	done
 	@echo "✓ Todos los archivos HEX están presentes"
 
-########################################################
-##                   SIMULACIÓN                       ##
-########################################################
+
 
 sim: check_hex_files
 	@echo "=== Compilando simulación ==="
@@ -107,9 +103,7 @@ sim_post_syn: $(TOP).json check_hex_files
 	vvp sim_post_syn.vpp
 	gtkwave $(TOP)_TB.vcd &
 
-########################################################
-##            SÍNTESIS LATTICE ECP5                   ##
-########################################################
+
 
 $(TARGET).json: $(COMM_OBJS) check_hex_files
 	@mkdir -p $(BUILD_DIR)
@@ -141,9 +135,10 @@ configure_lattice: $(TARGET).bit
 	@echo "=== Programando Lattice ECP5 ==="
 	sudo openFPGALoader -c ft232RL --pins=TXD:CTS:DTR:RXD -m $(BUILD_DIR)/$(TARGET).bit
 
-########################################################
-##              SÍNTESIS ICEBREAKER                   ##
-########################################################
+
+
+
+
 
 configure_icebreaker: check_hex_files
 	@echo "=== Sintetizando para iCEBreaker ==="
@@ -160,9 +155,7 @@ configure_icebreaker: check_hex_files
 	@echo "=== Programando iCEBreaker ==="
 	iceprog -d i:0x0403:0x6010 icebreaker.bin
 
-########################################################
-##                GOWIN TANG NANO/PRIMER              ##
-########################################################
+
 
 del_tcl_script:
 	rm -rf $(TCL_SCRIPT)

@@ -1,0 +1,325 @@
+Info: constraining clock net 'clk' to 25.00 MHz
+Info: constraining clock net 'LP_CLK' to 25.00 MHz
+Warning: IO 'init' is unconstrained in LPF and will be automatically placed
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:       182/24288     0%
+Info:         logic LUTs:    146/24288     0%
+Info:         carry LUTs:     36/24288     0%
+Info:           RAM LUTs:      0/ 3036     0%
+Info:          RAMW LUTs:      0/ 6072     0%
+
+Info:      Total DFFs:        61/24288     0%
+
+Info: Packing IOs..
+Info: pin 'rst$tr_io' constrained to Bel 'X6/Y50/PIOA'.
+Info: pin 'clk$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: pin 'ROW[4]$tr_io' constrained to Bel 'X0/Y38/PIOA'.
+Info: pin 'ROW[3]$tr_io' constrained to Bel 'X0/Y41/PIOA'.
+Info: pin 'ROW[2]$tr_io' constrained to Bel 'X0/Y38/PIOB'.
+Info: pin 'ROW[1]$tr_io' constrained to Bel 'X0/Y35/PIOD'.
+Info: pin 'ROW[0]$tr_io' constrained to Bel 'X0/Y44/PIOD'.
+Info: pin 'RGB1[2]$tr_io' constrained to Bel 'X72/Y11/PIOA'.
+Info: pin 'RGB1[1]$tr_io' constrained to Bel 'X72/Y17/PIOA'.
+Info: pin 'RGB1[0]$tr_io' constrained to Bel 'X72/Y17/PIOB'.
+Info: pin 'RGB0[2]$tr_io' constrained to Bel 'X72/Y17/PIOD'.
+Info: pin 'RGB0[1]$tr_io' constrained to Bel 'X72/Y29/PIOA'.
+Info: pin 'RGB0[0]$tr_io' constrained to Bel 'X72/Y17/PIOC'.
+Info: pin 'NOE$tr_io' constrained to Bel 'X0/Y35/PIOC'.
+Info: pin 'LP_CLK$tr_io' constrained to Bel 'X0/Y32/PIOD'.
+Info: pin 'LATCH$tr_io' constrained to Bel 'X0/Y32/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     22 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk1 to global network
+Info:     promoting clock net clk$TRELLIS_IO_IN to global network
+Info: Checksum: 0x0744a669
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:    17/  197     8%
+Info: 	                DCCA:     2/   56     3%
+Info: 	              DP16KD:     4/   56     7%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     0/    2     0%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:     0/  128     0%
+Info: 	            SIOLOGIC:     0/   69     0%
+Info: 	                 GSR:     0/    1     0%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:    61/24288     0%
+Info: 	        TRELLIS_COMB:   200/24288     0%
+Info: 	        TRELLIS_RAMW:     0/ 3036     0%
+
+Info: Placed 16 cells based on constraints.
+Info: Creating initial analytic placement for 138 cells, random placement wirelen = 9790.
+Info:     at initial placer iter 0, wirelen = 875
+Info:     at initial placer iter 1, wirelen = 766
+Info:     at initial placer iter 2, wirelen = 719
+Info:     at initial placer iter 3, wirelen = 757
+Info: Running main analytical placer, max placement attempts per cell = 10082.
+Info:     at iteration #1, type ALL: wirelen solved = 739, spread = 1459, legal = 1552; time = 0.02s
+Info:     at iteration #2, type ALL: wirelen solved = 733, spread = 1391, legal = 1501; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 753, spread = 1351, legal = 1475; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 757, spread = 1525, legal = 1628; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 759, spread = 1474, legal = 1570; time = 0.01s
+Info:     at iteration #6, type ALL: wirelen solved = 782, spread = 1409, legal = 1552; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 790, spread = 1201, legal = 1439; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 798, spread = 1427, legal = 1570; time = 0.01s
+Info:     at iteration #9, type ALL: wirelen solved = 791, spread = 1365, legal = 1530; time = 0.01s
+Info:     at iteration #10, type ALL: wirelen solved = 777, spread = 1188, legal = 1353; time = 0.01s
+Info:     at iteration #11, type ALL: wirelen solved = 798, spread = 1173, legal = 1349; time = 0.01s
+Info:     at iteration #12, type ALL: wirelen solved = 787, spread = 1137, legal = 1435; time = 0.01s
+Info:     at iteration #13, type ALL: wirelen solved = 797, spread = 1152, legal = 1385; time = 0.01s
+Info:     at iteration #14, type ALL: wirelen solved = 813, spread = 1132, legal = 1314; time = 0.01s
+Info:     at iteration #15, type ALL: wirelen solved = 787, spread = 1121, legal = 1366; time = 0.01s
+Info:     at iteration #16, type ALL: wirelen solved = 823, spread = 1095, legal = 1421; time = 0.01s
+Info:     at iteration #17, type ALL: wirelen solved = 821, spread = 1271, legal = 1485; time = 0.01s
+Info:     at iteration #18, type ALL: wirelen solved = 866, spread = 1236, legal = 1344; time = 0.01s
+Info:     at iteration #19, type ALL: wirelen solved = 856, spread = 1245, legal = 1331; time = 0.01s
+Info: HeAP Placer Time: 0.31s
+Info:   of which solving equations: 0.17s
+Info:   of which spreading cells: 0.04s
+Info:   of which strict legalisation: 0.02s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 126, wirelen = 1314
+Info:   at iteration #5: temp = 0.000000, timing cost = 108, wirelen = 1143
+Info:   at iteration #10: temp = 0.000000, timing cost = 120, wirelen = 1121
+Info:   at iteration #13: temp = 0.000000, timing cost = 105, wirelen = 1097 
+Info: SA placement time 0.18s
+
+Info: Max frequency for clock              '$glbnet$clk1': 65.70 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 285.23 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 6.06 ns
+Info: Max delay <async>                           -> posedge $glbnet$clk1             : 7.88 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 5.08 ns
+Info: Max delay posedge $glbnet$clk1              -> <async>                          : 3.64 ns
+Info: Max delay negedge $glbnet$clk1              -> <async>                          : 18.73 ns
+
+Info: Checksum: 0xd6673948
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk$TRELLIS_IO_IN using global 0
+Info:     routing clock net $glbnet$clk1 using global 1
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 713 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      370        588 |  370   588 |       121|       0.33       0.33|
+Info:       1143 |      392        685 |   22    97 |         0|       0.12       0.45|
+Info: Routing complete.
+Info: Router1 time 0.45s
+Info: Checksum: 0x0d4d2524
+
+Info: Critical path report for clock '$glbnet$clk1' (negedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source cnt_delay.outc_TRELLIS_FF_Q_5.Q
+Info:  0.9  1.4    Net count_delay[5] (5,27) -> (5,26)
+Info:                Sink lsr_led0.s_A_LUT4_B_1.A
+Info:                Defined in:
+Info:                  led_panel_4k.v:88.27-90.6
+Info:                  comp.v:5.20-5.23
+Info:  0.4  1.8  Source lsr_led0.s_A_LUT4_B_1.OFX
+Info:  0.0  1.8    Net lsr_led0.s_A_PFUMX_C0_3_Z (5,26) -> (5,26)
+Info:                Sink lsr_led0.s_A_LUT4_B.FXA
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.34-141.36
+Info:  0.2  2.1  Source lsr_led0.s_A_LUT4_B.OFX
+Info:  1.0  3.1    Net ctrl0.state_TRELLIS_FF_Q_DI_LUT4_Z_B[1] (5,26) -> (6,28)
+Info:                Sink ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.3  Source ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  3.3    Net ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT (6,28) -> (6,28)
+Info:                Sink ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.22-157.24
+Info:  0.2  3.5  Source ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  3.5    Net ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D0 (6,28) -> (6,28)
+Info:                Sink ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.50-157.52
+Info:  0.2  3.7  Source ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  3.7    Net ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0 (6,28) -> (6,28)
+Info:                Sink ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  4.0  Source ctrl0.LD_TRELLIS_FF_Q_LSR_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.9  4.9    Net ctrl0.LD_TRELLIS_FF_Q_LSR[5] (6,28) -> (6,29)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.1  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  5.1    Net NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT (6,29) -> (6,29)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.30-141.32
+Info:  0.2  5.3  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  5.3    Net NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1 (6,29) -> (6,29)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40
+Info:  0.2  5.5  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.4  6.0    Net NOE_TRELLIS_FF_Q_DI[11] (6,29) -> (5,28)
+Info:                Sink NOE_TRELLIS_FF_Q.M
+Info:  0.0  6.0  Setup NOE_TRELLIS_FF_Q.M
+Info: 2.7 ns logic, 3.3 ns routing
+
+Info: Critical path report for clock '$glbnet$clk$TRELLIS_IO_IN' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source clk_counter_TRELLIS_FF_Q_1.Q
+Info:  0.9  1.4    Net clk_counter[3] (10,27) -> (10,26)
+Info:                Sink clk1_TRELLIS_FF_Q_CE_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  led_panel_4k.v:24.15-24.26
+Info:  0.2  1.7  Source clk1_TRELLIS_FF_Q_CE_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  1.7    Net clk1_TRELLIS_FF_Q_CE_PFUMX_Z_ALUT (10,26) -> (10,26)
+Info:                Sink clk1_TRELLIS_FF_Q_CE_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:133.22-133.24
+Info:  0.2  1.8  Source clk1_TRELLIS_FF_Q_CE_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.2  2.0    Net clk1_TRELLIS_FF_Q_CE[1] (10,26) -> (10,26)
+Info:                Sink clk1_TRELLIS_FF_Q_CE_LUT4_D.D
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.3  Source clk1_TRELLIS_FF_Q_CE_LUT4_D.F
+Info:  0.6  2.9    Net clk1_TRELLIS_FF_Q_CE_LUT4_D_Z (10,26) -> (10,27)
+Info:                Sink clk_counter_TRELLIS_FF_Q_4.LSR
+Info:  0.4  3.3  Setup clk_counter_TRELLIS_FF_Q_4.LSR
+Info: 1.6 ns logic, 1.7 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.0  0.0  Source rst$tr_io.O
+Info:  2.8  2.8    Net rst$TRELLIS_IO_IN (6,50) -> (10,26)
+Info:                Sink clk1_TRELLIS_FF_Q_CE_LUT4_D.C
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.0  Source clk1_TRELLIS_FF_Q_CE_LUT4_D.F
+Info:  0.6  3.6    Net clk1_TRELLIS_FF_Q_CE_LUT4_D_Z (10,26) -> (10,27)
+Info:                Sink clk_counter_TRELLIS_FF_Q_4.LSR
+Info:  0.4  4.0  Setup clk_counter_TRELLIS_FF_Q_4.LSR
+Info: 0.7 ns logic, 3.4 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk1':
+Info: curr total
+Info:  0.0  0.0  Source rst$tr_io.O
+Info:  2.5  2.5    Net rst$TRELLIS_IO_IN (6,50) -> (8,27)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A.D
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  2.9  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A.OFX
+Info:  0.0  2.9    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z (8,27) -> (8,27)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40
+Info:  0.2  3.2  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_ALUT_LUT4_Z.OFX
+Info:  0.8  4.0    Net tmp_latch_TRELLIS_FF_Q_LSR_LUT4_Z_C[1] (8,27) -> (7,27)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.2  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  4.2    Net NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT (7,27) -> (7,27)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.30-157.32
+Info:  0.2  4.4  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  4.4    Net NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1 (7,27) -> (7,27)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.54-157.56
+Info:  0.2  4.6  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  4.6    Net NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D0 (7,27) -> (7,27)
+Info:                Sink NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  4.9  Source NOE_TRELLIS_FF_Q_DI_L6MUX21_Z_1_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.6  5.5    Net NOE_TRELLIS_FF_Q_DI[1] (7,27) -> (8,27)
+Info:                Sink count_col.reset_TRELLIS_FF_Q.M
+Info:  0.0  5.5  Setup count_col.reset_TRELLIS_FF_Q.M
+Info: 1.5 ns logic, 4.0 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source clk1_TRELLIS_FF_Q.Q
+Info:  1.3  1.8    Net clk1 (10,26) -> (7,30)
+Info:                Sink LP_CLK_LUT4_Z.C
+Info:                Defined in:
+Info:                  led_panel_4k.v:100.7-105.6
+Info:                  memory_V2.v:5.21-5.24
+Info:  0.2  2.1  Source LP_CLK_LUT4_Z.F
+Info:  1.3  3.3    Net LP_CLK$TRELLIS_IO_OUT (7,30) -> (0,32)
+Info:                Sink LP_CLK$tr_io.I
+Info:                Defined in:
+Info:                  led_panel_4k.v:5.17-5.23
+Info: 0.8 ns logic, 2.6 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk1' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source count_col.inc_TRELLIS_FF_Q.Q
+Info:  0.9  1.4    Net PX_CLK_EN (7,29) -> (7,30)
+Info:                Sink LP_CLK_LUT4_Z.D
+Info:                Defined in:
+Info:                  led_panel_4k.v:17.19-17.26
+Info:  0.2  1.6  Source LP_CLK_LUT4_Z.F
+Info:  1.3  2.9    Net LP_CLK$TRELLIS_IO_OUT (7,30) -> (0,32)
+Info:                Sink LP_CLK$tr_io.I
+Info:                Defined in:
+Info:                  led_panel_4k.v:5.17-5.23
+Info: 0.8 ns logic, 2.1 ns routing
+
+Info: Critical path report for cross-domain path 'negedge $glbnet$clk1' -> '<async>':
+Info: curr total
+Info:  5.6  5.6  Source mem0.MEM1.0.0.DOA8
+Info:  1.1  6.7    Net mem_data[8] (10,25) -> (8,26)
+Info:                Sink RGB1_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  led_panel_4k.v:108.13-110.6
+Info:                  mux_led.v:2.22-2.25
+Info:  0.4  7.1  Source RGB1_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.9  8.0    Net RGB1_LUT4_Z_D[3] (8,26) -> (8,26)
+Info:                Sink RGB1_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/daniel/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  8.2  Source RGB1_LUT4_Z.F
+Info:  4.9 13.1    Net RGB1[2]$TRELLIS_IO_OUT (8,26) -> (72,11)
+Info:                Sink RGB1[2]$tr_io.I
+Info:                Defined in:
+Info:                  led_panel_4k.v:108.13-110.6
+Info:                  mux_led.v:4.22-4.26
+Info: 6.2 ns logic, 6.8 ns routing
+
+Info: Max frequency for clock              '$glbnet$clk1': 83.99 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 304.60 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 4.03 ns
+Info: Max delay <async>                           -> posedge $glbnet$clk1             : 5.49 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 3.34 ns
+Info: Max delay posedge $glbnet$clk1              -> <async>                          : 2.90 ns
+Info: Max delay negedge $glbnet$clk1              -> <async>                          : 13.09 ns
+
+1 warning, 0 errors
+
+Info: Program finished normally.

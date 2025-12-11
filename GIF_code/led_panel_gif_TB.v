@@ -10,7 +10,7 @@ module led_panel_gif(
     output wire [2:0] RGB1
 );
 
-    // Parámetros de la matriz
+    
     parameter NUM_COLS = 64;
     parameter NUM_ROWS = 64;
     parameter NUM_PIXELS = NUM_COLS * NUM_ROWS;
@@ -18,11 +18,10 @@ module led_panel_gif(
     parameter BIT_DEPTH = 4;
     parameter DELAY = 20;
     
-    // Parámetros del GIF
-    parameter TOTAL_FRAMES = 4;
-    parameter FRAME_SPEED = 12500000;  // 0.5 segundos por frame @ 25MHz
     
-    // Señales del controlador original
+    parameter TOTAL_FRAMES = 4;
+    parameter FRAME_SPEED = 12500000; 
+    
     wire w_ZR, w_ZC, w_ZD, w_ZI;
     wire w_LD, w_SHD;
     wire w_RST_R, w_RST_C, w_RST_D, w_RST_I;
@@ -30,29 +29,29 @@ module led_panel_gif(
     wire [10:0] count_delay;
     wire [10:0] delay;
     wire [1:0] index;
-    wire [5:0] COL;  // 6 bits para columnas (0-63)
-    wire [10:0] PIX_ADDR;  // 11 bits para 2048 direcciones
+    wire [5:0] COL;  
+    wire [10:0] PIX_ADDR;  
     wire [23:0] mem_data;
     wire tmp_noe, tmp_latch;
     wire PX_CLK_EN;
     
-    // Señales del GIF
+   
     wire [1:0] frame_actual;
     wire frame_changed;
     
-    // Wire interno para el contador de filas completo
+
     wire [10:0] count_row_full;
     
     reg clk1;
     reg [4:0] clk_counter;
     
-    // Asignaciones
+    
     assign LATCH = ~tmp_latch;
     assign NOE = tmp_noe;
-    assign PIX_ADDR = count_row_full;  // Usar el contador completo directamente
+    assign PIX_ADDR = count_row_full;  
     assign LP_CLK = clk1 & PX_CLK_EN;
     
-    // Divisor de reloj
+  
     always @(posedge clk) begin
         if (!rst) begin
             clk_counter <= 0;
@@ -68,7 +67,7 @@ module led_panel_gif(
         end
     end
     
-    // Instanciación del controlador de GIF
+  
     gif_controller #(
         .TOTAL_FRAMES(TOTAL_FRAMES),
         .FRAME_SPEED(FRAME_SPEED)
@@ -80,10 +79,9 @@ module led_panel_gif(
         .frame_changed(frame_changed)
     );
     
-    // Contadores
-    // count_row genera la dirección completa de 11 bits
+   
     count #(
-        .width(10)  // 11 bits de salida (0-2047)
+        .width(10)  
     ) count_row (
         .clk(clk1),
         .reset(w_RST_R),
@@ -92,8 +90,8 @@ module led_panel_gif(
         .zero(w_ZR)
     );
     
-    // Tomar solo los bits necesarios para ROW (bits superiores)
-    assign ROW = count_row_full[10:6];  // 5 bits para las filas (0-31)
+ 
+    assign ROW = count_row_full[10:6]; 
     
     count #(
         .width($clog2(NUM_COLS) - 1)
@@ -124,7 +122,7 @@ module led_panel_gif(
         .zero(w_ZI)
     );
     
-    // Load-Shift Register para delays
+    
     lsr_led #(
         .init_value(DELAY),
         .width(10)
@@ -135,7 +133,7 @@ module led_panel_gif(
         .s_A(delay)
     );
     
-    // Comparador
+   
     comp_4k #(
         .width(10)
     ) compa (
@@ -144,7 +142,6 @@ module led_panel_gif(
         .out(w_ZD)
     );
     
-    // CORREGIDO: Instanciación correcta de memoria con múltiples frames
     memory_gif #(
         .SIZE_FRAME(2047),
         .WIDTH(11),
@@ -152,19 +149,19 @@ module led_panel_gif(
     ) mem_inst (
         .clk(clk),
         .address(PIX_ADDR),
-        .frame_sel(frame_actual),  // Usar frame_actual del controlador GIF
-        .rd(1'b1),                 // Siempre leyendo
+        .frame_sel(frame_actual),  
+        .rd(1'b1),                
         .rdata(mem_data)
     );
     
-    // Multiplexor
+    
     mux_led mux0 (
         .in0(mem_data),
         .out0({RGB0, RGB1}),
         .sel(index)
     );
     
-    // Controlador de la matriz LED
+
     ctrl_lp4k ctrl0 (
         .clk(clk1),
         .rst(!rst),

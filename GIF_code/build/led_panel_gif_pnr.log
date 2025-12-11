@@ -1,0 +1,638 @@
+Info: constraining clock net 'clk' to 25.00 MHz
+Info: constraining clock net 'LP_CLK' to 25.00 MHz
+Warning: IO 'init' is unconstrained in LPF and will be automatically placed
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:     10551/24288    43%
+Info:         logic LUTs:  10463/24288    43%
+Info:         carry LUTs:     88/24288     0%
+Info:           RAM LUTs:      0/ 3036     0%
+Info:          RAMW LUTs:      0/ 6072     0%
+
+Info:      Total DFFs:       117/24288     0%
+
+Info: Packing IOs..
+Info: pin 'rst$tr_io' constrained to Bel 'X6/Y50/PIOA'.
+Info: pin 'clk$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: pin 'ROW[4]$tr_io' constrained to Bel 'X0/Y38/PIOA'.
+Info: pin 'ROW[3]$tr_io' constrained to Bel 'X0/Y41/PIOA'.
+Info: pin 'ROW[2]$tr_io' constrained to Bel 'X0/Y38/PIOB'.
+Info: pin 'ROW[1]$tr_io' constrained to Bel 'X0/Y35/PIOD'.
+Info: pin 'ROW[0]$tr_io' constrained to Bel 'X0/Y44/PIOD'.
+Info: pin 'RGB1[2]$tr_io' constrained to Bel 'X72/Y11/PIOA'.
+Info: pin 'RGB1[1]$tr_io' constrained to Bel 'X72/Y17/PIOA'.
+Info: pin 'RGB1[0]$tr_io' constrained to Bel 'X72/Y17/PIOB'.
+Info: pin 'RGB0[2]$tr_io' constrained to Bel 'X72/Y17/PIOD'.
+Info: pin 'RGB0[1]$tr_io' constrained to Bel 'X72/Y29/PIOA'.
+Info: pin 'RGB0[0]$tr_io' constrained to Bel 'X72/Y17/PIOC'.
+Info: pin 'NOE$tr_io' constrained to Bel 'X0/Y35/PIOC'.
+Info: pin 'LP_CLK$tr_io' constrained to Bel 'X0/Y32/PIOD'.
+Info: pin 'LATCH$tr_io' constrained to Bel 'X0/Y32/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     72 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk$TRELLIS_IO_IN to global network
+Info:     promoting clock net clk1 to global network
+Info: Checksum: 0x7d7a2739
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:    17/  197     8%
+Info: 	                DCCA:     2/   56     3%
+Info: 	              DP16KD:     0/   56     0%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     0/    2     0%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:     0/  128     0%
+Info: 	            SIOLOGIC:     0/   69     0%
+Info: 	                 GSR:     0/    1     0%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:   117/24288     0%
+Info: 	        TRELLIS_COMB: 10577/24288    43%
+Info: 	        TRELLIS_RAMW:     0/ 3036     0%
+
+Info: Placed 16 cells based on constraints.
+Info: Creating initial analytic placement for 3118 cells, random placement wirelen = 137536.
+Info:     at initial placer iter 0, wirelen = 1206
+Info:     at initial placer iter 1, wirelen = 828
+Info:     at initial placer iter 2, wirelen = 780
+Info:     at initial placer iter 3, wirelen = 756
+Info: Running main analytical placer, max placement attempts per cell = 14346046.
+Info:     at iteration #1, type ALL: wirelen solved = 738, spread = 29433, legal = 29860; time = 0.17s
+Info:     at iteration #2, type ALL: wirelen solved = 4970, spread = 19561, legal = 20143; time = 0.13s
+Info:     at iteration #3, type ALL: wirelen solved = 6621, spread = 16469, legal = 16946; time = 0.15s
+Info:     at iteration #4, type ALL: wirelen solved = 7916, spread = 14995, legal = 15619; time = 0.14s
+Info:     at iteration #5, type ALL: wirelen solved = 8369, spread = 14283, legal = 14955; time = 0.14s
+Info:     at iteration #6, type ALL: wirelen solved = 8693, spread = 13856, legal = 14583; time = 0.15s
+Info:     at iteration #7, type ALL: wirelen solved = 9104, spread = 13352, legal = 14091; time = 0.14s
+Info:     at iteration #8, type ALL: wirelen solved = 9410, spread = 12939, legal = 13730; time = 0.14s
+Info:     at iteration #9, type ALL: wirelen solved = 9520, spread = 12723, legal = 13455; time = 0.14s
+Info:     at iteration #10, type ALL: wirelen solved = 9691, spread = 12525, legal = 13278; time = 0.14s
+Info:     at iteration #11, type ALL: wirelen solved = 9666, spread = 12547, legal = 13355; time = 0.14s
+Info:     at iteration #12, type ALL: wirelen solved = 9688, spread = 12560, legal = 13325; time = 0.17s
+Info:     at iteration #13, type ALL: wirelen solved = 9835, spread = 12562, legal = 13319; time = 0.14s
+Info:     at iteration #14, type ALL: wirelen solved = 9912, spread = 12423, legal = 13164; time = 0.19s
+Info:     at iteration #15, type ALL: wirelen solved = 9982, spread = 12208, legal = 13065; time = 0.16s
+Info:     at iteration #16, type ALL: wirelen solved = 9912, spread = 12314, legal = 13104; time = 0.14s
+Info:     at iteration #17, type ALL: wirelen solved = 10063, spread = 12205, legal = 12937; time = 0.14s
+Info:     at iteration #18, type ALL: wirelen solved = 10090, spread = 12216, legal = 12897; time = 0.14s
+Info:     at iteration #19, type ALL: wirelen solved = 10178, spread = 12200, legal = 12946; time = 0.14s
+Info:     at iteration #20, type ALL: wirelen solved = 10093, spread = 12251, legal = 12978; time = 0.14s
+Info:     at iteration #21, type ALL: wirelen solved = 10169, spread = 12160, legal = 12935; time = 0.14s
+Info:     at iteration #22, type ALL: wirelen solved = 10218, spread = 12173, legal = 12876; time = 0.14s
+Info:     at iteration #23, type ALL: wirelen solved = 10220, spread = 12336, legal = 13028; time = 0.15s
+Info:     at iteration #24, type ALL: wirelen solved = 10319, spread = 12154, legal = 12978; time = 0.14s
+Info:     at iteration #25, type ALL: wirelen solved = 10268, spread = 12289, legal = 13155; time = 0.14s
+Info:     at iteration #26, type ALL: wirelen solved = 10398, spread = 12281, legal = 13020; time = 0.14s
+Info:     at iteration #27, type ALL: wirelen solved = 10442, spread = 12281, legal = 13017; time = 0.13s
+Info: HeAP Placer Time: 6.13s
+Info:   of which solving equations: 3.48s
+Info:   of which spreading cells: 0.46s
+Info:   of which strict legalisation: 0.17s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 9783, wirelen = 12876
+Info:   at iteration #5: temp = 0.000000, timing cost = 5529, wirelen = 11744
+Info:   at iteration #10: temp = 0.000000, timing cost = 7927, wirelen = 11434
+Info:   at iteration #14: temp = 0.000000, timing cost = 8286, wirelen = 11350 
+Info: SA placement time 10.24s
+
+Info: Max frequency for clock              '$glbnet$clk1': 43.39 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 154.97 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 9.66 ns
+Info: Max delay <async>                           -> posedge $glbnet$clk1             : 5.70 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 15.44 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> posedge $glbnet$clk1             : 1.61 ns
+Info: Max delay posedge $glbnet$clk1              -> <async>                          : 4.84 ns
+Info: Max delay posedge $glbnet$clk1              -> posedge $glbnet$clk$TRELLIS_IO_IN: 14.30 ns
+Info: Max delay negedge $glbnet$clk1              -> <async>                          : 17.48 ns
+Info: Max delay negedge $glbnet$clk1              -> posedge $glbnet$clk$TRELLIS_IO_IN: 17.92 ns
+
+Info: Checksum: 0x451a4335
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk1 using global 0
+Info:     routing clock net $glbnet$clk$TRELLIS_IO_IN using global 1
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 43441 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      591        408 |  591   408 |     43039|       0.46       0.46|
+Info:       2000 |     1078        921 |  487   513 |     42564|       0.10       0.56|
+Info:       3000 |     1601       1398 |  523   477 |     42137|       0.11       0.67|
+Info:       4000 |     2046       1953 |  445   555 |     41601|       0.12       0.79|
+Info:       5000 |     2474       2525 |  428   572 |     41133|       0.11       0.90|
+Info:       6000 |     2944       3055 |  470   530 |     40698|       0.12       1.01|
+Info:       7000 |     3416       3583 |  472   528 |     40275|       0.12       1.14|
+Info:       8000 |     3786       4213 |  370   630 |     39993|       0.12       1.25|
+Info:       9000 |     4197       4802 |  411   589 |     39680|       0.10       1.36|
+Info:      10000 |     4660       5339 |  463   537 |     39197|       0.11       1.46|
+Info:      11000 |     5074       5925 |  414   586 |     38778|       0.11       1.57|
+Info:      12000 |     5577       6422 |  503   497 |     38389|       0.13       1.70|
+Info:      13000 |     5980       7019 |  403   597 |     38312|       0.14       1.83|
+Info:      14000 |     6357       7642 |  377   623 |     38064|       0.13       1.96|
+Info:      15000 |     6725       8274 |  368   632 |     37798|       0.14       2.10|
+Info:      16000 |     7153       8846 |  428   572 |     37351|       0.14       2.24|
+Info:      17000 |     7553       9446 |  400   600 |     37461|       0.14       2.38|
+Info:      18000 |     7877      10122 |  324   676 |     37318|       0.15       2.53|
+Info:      19000 |     8231      10768 |  354   646 |     36821|       0.13       2.66|
+Info:      20000 |     8617      11382 |  386   614 |     36289|       0.13       2.80|
+Info:      21000 |     8970      12029 |  353   647 |     36407|       0.13       2.92|
+Info:      22000 |     9322      12677 |  352   648 |     35933|       0.12       3.04|
+Info:      23000 |     9725      13274 |  403   597 |     35455|       0.12       3.16|
+Info:      24000 |    10048      13951 |  323   677 |     35387|       0.12       3.28|
+Info:      25000 |    10173      14826 |  125   875 |     35564|       0.09       3.37|
+Info:      26000 |    10435      15564 |  262   738 |     34871|       0.10       3.48|
+Info:      27000 |    10816      16183 |  381   619 |     34613|       0.13       3.60|
+Info:      28000 |    11207      16792 |  391   609 |     34160|       0.13       3.73|
+Info:      29000 |    11580      17419 |  373   627 |     33749|       0.15       3.89|
+Info:      30000 |    11936      18063 |  356   644 |     33229|       0.15       4.04|
+Info:      31000 |    12310      18689 |  374   626 |     33004|       0.14       4.18|
+Info:      32000 |    12693      19306 |  383   617 |     32548|       0.17       4.35|
+Info:      33000 |    12990      20009 |  297   703 |     32318|       0.14       4.49|
+Info:      34000 |    13392      20607 |  402   598 |     32647|       0.13       4.62|
+Info:      35000 |    13730      21269 |  338   662 |     32039|       0.13       4.74|
+Info:      36000 |    14103      21896 |  373   627 |     31543|       0.13       4.87|
+Info:      37000 |    14508      22491 |  405   595 |     31137|       0.12       4.99|
+Info:      38000 |    14878      23121 |  370   630 |     31175|       0.14       5.13|
+Info:      39000 |    15229      23770 |  351   649 |     31159|       0.14       5.28|
+Info:      40000 |    15595      24404 |  366   634 |     30757|       0.13       5.41|
+Info:      41000 |    15971      25028 |  376   624 |     30924|       0.13       5.54|
+Info:      42000 |    16318      25681 |  347   653 |     30849|       0.15       5.69|
+Info:      43000 |    16626      26373 |  308   692 |     30464|       0.15       5.84|
+Info:      44000 |    17016      26983 |  390   610 |     30094|       0.15       5.99|
+Info:      45000 |    17394      27605 |  378   622 |     29844|       0.15       6.14|
+Info:      46000 |    17767      28232 |  373   627 |     29497|       0.18       6.31|
+Info:      47000 |    18110      28889 |  343   657 |     29548|       0.17       6.49|
+Info:      48000 |    18504      29495 |  394   606 |     29351|       0.19       6.68|
+Info:      49000 |    18897      30102 |  393   607 |     28920|       0.13       6.81|
+Info:      50000 |    19253      30746 |  356   644 |     28754|       0.15       6.96|
+Info:      51000 |    19626      31373 |  373   627 |     28537|       0.16       7.12|
+Info:      52000 |    19996      32003 |  370   630 |     28223|       0.13       7.25|
+Info:      53000 |    20418      32581 |  422   578 |     27829|       0.13       7.38|
+Info:      54000 |    20854      33145 |  436   564 |     27337|       0.12       7.50|
+Info:      55000 |    21243      33756 |  389   611 |     27120|       0.14       7.65|
+Info:      56000 |    21610      34389 |  367   633 |     27109|       0.15       7.79|
+Info:      57000 |    21937      35062 |  327   673 |     26629|       0.14       7.94|
+Info:      58000 |    22305      35694 |  368   632 |     27305|       0.15       8.09|
+Info:      59000 |    22644      36355 |  339   661 |     26950|       0.16       8.25|
+Info:      60000 |    22925      37074 |  281   719 |     26673|       0.15       8.39|
+Info:      61000 |    23200      37799 |  275   725 |     26179|       0.13       8.52|
+Info:      62000 |    23541      38458 |  341   659 |     26055|       0.13       8.65|
+Info:      63000 |    23898      39101 |  357   643 |     25537|       0.13       8.78|
+Info:      64000 |    24224      39775 |  326   674 |     25790|       0.13       8.92|
+Info:      65000 |    24513      40486 |  289   711 |     25571|       0.17       9.09|
+Info:      66000 |    24828      41171 |  315   685 |     25399|       0.13       9.22|
+Info:      67000 |    25206      41793 |  378   622 |     24875|       0.14       9.37|
+Info:      68000 |    25495      42504 |  289   711 |     24968|       0.13       9.49|
+Info:      69000 |    25783      43216 |  288   712 |     25171|       0.13       9.63|
+Info:      70000 |    26056      43943 |  273   727 |     24703|       0.13       9.76|
+Info:      71000 |    26416      44583 |  360   640 |     24279|       0.13       9.89|
+Info:      72000 |    26749      45250 |  333   667 |     23776|       0.12      10.01|
+Info:      73000 |    27100      45899 |  351   649 |     23934|       0.13      10.14|
+Info:      74000 |    27451      46548 |  351   649 |     23352|       0.13      10.27|
+Info:      75000 |    27761      47238 |  310   690 |     23016|       0.13      10.40|
+Info:      76000 |    28066      47933 |  305   695 |     23211|       0.17      10.58|
+Info:      77000 |    28377      48622 |  311   689 |     23110|       0.16      10.74|
+Info:      78000 |    28682      49317 |  305   695 |     23186|       0.15      10.89|
+Info:      79000 |    29002      49997 |  320   680 |     22940|       0.16      11.05|
+Info:      80000 |    29337      50662 |  335   665 |     22488|       0.16      11.22|
+Info:      81000 |    29643      51356 |  306   694 |     22419|       0.16      11.38|
+Info:      82000 |    30016      51983 |  373   627 |     22274|       0.16      11.53|
+Info:      83000 |    30342      52657 |  326   674 |     21953|       0.17      11.70|
+Info:      84000 |    30591      53408 |  249   751 |     22484|       0.17      11.87|
+Info:      85000 |    30878      54121 |  287   713 |     22529|       0.15      12.02|
+Info:      86000 |    31172      54827 |  294   706 |     22698|       0.16      12.19|
+Info:      87000 |    31489      55510 |  317   683 |     22872|       0.16      12.35|
+Info:      88000 |    31659      56340 |  170   830 |     22126|       0.13      12.48|
+Info:      89000 |    32005      56994 |  346   654 |     21912|       0.14      12.61|
+Info:      90000 |    32333      57666 |  328   672 |     21917|       0.15      12.77|
+Info:      91000 |    32642      58357 |  309   691 |     21434|       0.17      12.93|
+Info:      92000 |    33018      58981 |  376   624 |     21328|       0.17      13.10|
+Info:      93000 |    33350      59649 |  332   668 |     21007|       0.16      13.26|
+Info:      94000 |    33660      60339 |  310   690 |     20873|       0.15      13.41|
+Info:      95000 |    33944      61055 |  284   716 |     20470|       0.15      13.55|
+Info:      96000 |    34270      61729 |  326   674 |     20123|       0.14      13.69|
+Info:      97000 |    34601      62398 |  331   669 |     20263|       0.14      13.84|
+Info:      98000 |    34867      63132 |  266   734 |     20356|       0.15      13.99|
+Info:      99000 |    35197      63802 |  330   670 |     19744|       0.14      14.13|
+Info:     100000 |    35475      64524 |  278   722 |     19647|       0.17      14.29|
+Info:     101000 |    35763      65236 |  288   712 |     19573|       0.15      14.45|
+Info:     102000 |    35977      66022 |  214   786 |     19819|       0.17      14.62|
+Info:     103000 |    36198      66801 |  221   779 |     19478|       0.19      14.80|
+Info:     104000 |    36441      67558 |  243   757 |     19326|       0.19      14.99|
+Info:     105000 |    36726      68273 |  285   715 |     20396|       0.18      15.17|
+Info:     106000 |    36995      69004 |  269   731 |     19890|       0.19      15.35|
+Info:     107000 |    37252      69747 |  257   743 |     19342|       0.16      15.52|
+Info:     108000 |    37533      70466 |  281   719 |     19424|       0.18      15.70|
+Info:     109000 |    37768      71231 |  235   765 |     19161|       0.16      15.86|
+Info:     110000 |    38079      71920 |  311   689 |     19538|       0.15      16.01|
+Info:     111000 |    38383      72616 |  304   696 |     19010|       0.16      16.18|
+Info:     112000 |    38679      73320 |  296   704 |     19074|       0.16      16.34|
+Info:     113000 |    38990      74009 |  311   689 |     19527|       0.14      16.48|
+Info:     114000 |    39347      74652 |  357   643 |     19255|       0.15      16.63|
+Info:     115000 |    39595      75404 |  248   752 |     19524|       0.14      16.78|
+Info:     116000 |    39766      76233 |  171   829 |     18848|       0.14      16.91|
+Info:     117000 |    40008      76991 |  242   758 |     19330|       0.17      17.08|
+Info:     118000 |    40197      77802 |  189   811 |     18757|       0.13      17.21|
+Info:     119000 |    40483      78516 |  286   714 |     18416|       0.17      17.39|
+Info:     120000 |    40788      79211 |  305   695 |     17929|       0.17      17.56|
+Info:     121000 |    41098      79901 |  310   690 |     17565|       0.16      17.72|
+Info:     122000 |    41376      80623 |  278   722 |     17491|       0.17      17.88|
+Info:     123000 |    41680      81319 |  304   696 |     17140|       0.17      18.06|
+Info:     124000 |    41971      82028 |  291   709 |     16827|       0.15      18.21|
+Info:     125000 |    42300      82699 |  329   671 |     16393|       0.13      18.34|
+Info:     126000 |    42634      83365 |  334   666 |     16052|       0.13      18.47|
+Info:     127000 |    42963      84036 |  329   671 |     15469|       0.13      18.59|
+Info:     128000 |    43289      84710 |  326   674 |     15185|       0.15      18.75|
+Info:     129000 |    43567      85432 |  278   722 |     14948|       0.15      18.89|
+Info:     130000 |    43899      86100 |  332   668 |     14978|       0.16      19.05|
+Info:     131000 |    44177      86822 |  278   722 |     14353|       0.16      19.21|
+Info:     132000 |    44542      87457 |  365   635 |     14534|       0.17      19.38|
+Info:     133000 |    44796      88203 |  254   746 |     13993|       0.16      19.54|
+Info:     134000 |    45156      88843 |  360   640 |     14343|       0.20      19.74|
+Info:     135000 |    45470      89529 |  314   686 |     14079|       0.18      19.91|
+Info:     136000 |    45926      90073 |  456   544 |     13852|       0.16      20.07|
+Info:     137000 |    46310      90689 |  384   616 |     13499|       0.16      20.24|
+Info:     138000 |    46651      91348 |  341   659 |     12912|       0.15      20.38|
+Info:     139000 |    46911      92001 |  260   653 |     12299|       0.15      20.53|
+Info:     140000 |    47201      92635 |  290   634 |     11749|       0.14      20.67|
+Info:     141000 |    47445      93279 |  244   644 |     11270|       0.15      20.82|
+Info:     142000 |    47587      93912 |  142   633 |     10487|       0.11      20.93|
+Info:     143000 |    47740      94493 |  153   581 |      9689|       0.11      21.04|
+Info:     144000 |    47918      95166 |  178   673 |     10603|       0.16      21.20|
+Info:     145000 |    48181      95903 |  263   737 |     10057|       0.18      21.38|
+Info:     146000 |    48445      96639 |  264   736 |      9452|       0.15      21.53|
+Info:     147000 |    48589      97271 |  144   632 |      8619|       0.10      21.63|
+Info:     148000 |    48708      97853 |  119   582 |      7783|       0.09      21.72|
+Info:     149000 |    48820      98444 |  112   591 |      6903|       0.13      21.86|
+Info:     150000 |    48952      99016 |  132   572 |      6096|       0.09      21.95|
+Info:     151000 |    49095      99584 |  143   568 |      5280|       0.10      22.05|
+Info:     152000 |    49198     100193 |  103   609 |      4385|       0.10      22.15|
+Info:     153000 |    49281     100797 |   83   604 |      3480|       0.10      22.25|
+Info:     154000 |    49435     101378 |  154   581 |      2638|       0.11      22.35|
+Info:     155000 |    49552     102041 |  117   663 |      1760|       0.11      22.46|
+Info:     156000 |    49580     102327 |   28   286 |       815|       0.11      22.57|
+Info:     156818 |    49584     102412 |    4    85 |         0|       0.09      22.66|
+Info: Routing complete.
+Info: Router1 time 22.66s
+Info: Checksum: 0x21c9f3f6
+
+Info: Critical path report for clock '$glbnet$clk1' (negedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source count_col.outc_TRELLIS_FF_Q_2.Q
+Info:  2.1  2.7    Net col_addr[3] (18,24) -> (19,40)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_PFUMX_Z_1_BLUT_LUT4_Z.D
+Info:                Defined in:
+Info:                  led_panel_gif.v:45.17-45.27
+Info:  0.4  3.1  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_PFUMX_Z_1_BLUT_LUT4_Z.OFX
+Info:  1.8  4.9    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z[2] (19,40) -> (6,45)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B.C
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.1  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B.F
+Info:  0.9  6.0    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_Z[5] (6,45) -> (4,44)
+Info:                Sink count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.3  6.3  Source count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  6.3    Net count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1 (4,44) -> (4,44)
+Info:                Sink count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  6.5  Source count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.1  7.6    Net count_index.inc_TRELLIS_FF_Q_DI[1] (4,44) -> (5,43)
+Info:                Sink count_index.reset_TRELLIS_FF_Q_DI_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  7.9  Source count_index.reset_TRELLIS_FF_Q_DI_LUT4_Z.F
+Info:  0.1  8.0    Net count_index.reset_TRELLIS_FF_Q_DI (5,43) -> (5,43)
+Info:                Sink count_index.reset_TRELLIS_FF_Q.DI
+Info:  0.0  8.0  Setup count_index.reset_TRELLIS_FF_Q.DI
+Info: 1.9 ns logic, 6.1 ns routing
+
+Info: Critical path report for clock '$glbnet$clk$TRELLIS_IO_IN' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source gif_ctrl.frame_counter_TRELLIS_FF_Q_18.Q
+Info:  1.5  2.0    Net gif_ctrl.frame_counter[13] (23,45) -> (24,47)
+Info:                Sink gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_A_LUT4_Z.A
+Info:                Defined in:
+Info:                  led_panel_gif.v:88.7-94.6
+Info:                  gif_controller.v:13.16-13.29
+Info:  0.2  2.2  Source gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_A_LUT4_Z.F
+Info:  0.8  3.0    Net gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_A[3] (24,47) -> (24,44)
+Info:                Sink gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.2  Source gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z.F
+Info:  0.9  4.2    Net gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z_A[1] (24,44) -> (26,45)
+Info:                Sink gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z.B
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.4  Source gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:  0.0  4.5    Net gif_ctrl.next_frame_TRELLIS_FF_Q_CE[0] (26,45) -> (26,45)
+Info:                Sink gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_C.C
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.7  Source gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_C.F
+Info:  0.6  5.3    Net gif_ctrl.next_frame_TRELLIS_FF_Q_CE_LUT4_C_Z (26,45) -> (22,45)
+Info:                Sink gif_ctrl.frame_counter_TRELLIS_FF_Q_31.LSR
+Info:  0.4  5.7  Setup gif_ctrl.frame_counter_TRELLIS_FF_Q_31.LSR
+Info: 1.9 ns logic, 3.8 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.0  0.0  Source rst$tr_io.O
+Info:  4.2  4.2    Net rst$TRELLIS_IO_IN (6,50) -> (15,2)
+Info:                Sink clk1_TRELLIS_FF_Q_CE_LUT4_C.D
+Info:                Defined in:
+Info:                  led_panel_gif.v:3.16-3.19
+Info:  0.2  4.5  Source clk1_TRELLIS_FF_Q_CE_LUT4_C.F
+Info:  0.4  4.9    Net clk1_TRELLIS_FF_Q_CE_LUT4_C_Z (15,2) -> (16,2)
+Info:                Sink clk_counter_TRELLIS_FF_Q_4.LSR
+Info:  0.4  5.3  Setup clk_counter_TRELLIS_FF_Q_4.LSR
+Info: 0.7 ns logic, 4.6 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk1':
+Info: curr total
+Info:  0.0  0.0  Source rst$tr_io.O
+Info:  1.4  1.4    Net rst$TRELLIS_IO_IN (6,50) -> (4,45)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_Z_LUT4_Z.D
+Info:                Defined in:
+Info:                  led_panel_gif.v:3.16-3.19
+Info:  0.2  1.6  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_Z_LUT4_Z.F
+Info:  0.7  2.3    Net tmp_latch_TRELLIS_FF_Q_DI[2] (4,45) -> (4,44)
+Info:                Sink count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.3  2.6  Source count_index.inc_TRELLIS_FF_Q_DI_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.1  3.7    Net count_index.inc_TRELLIS_FF_Q_DI[1] (4,44) -> (5,43)
+Info:                Sink count_index.reset_TRELLIS_FF_Q_DI_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.9  Source count_index.reset_TRELLIS_FF_Q_DI_LUT4_Z.F
+Info:  0.1  4.0    Net count_index.reset_TRELLIS_FF_Q_DI (5,43) -> (5,43)
+Info:                Sink count_index.reset_TRELLIS_FF_Q.DI
+Info:  0.0  4.0  Setup count_index.reset_TRELLIS_FF_Q.DI
+Info: 0.7 ns logic, 3.3 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source mem_inst.rdata_TRELLIS_FF_Q_15.Q
+Info:  1.8  2.3    Net mem_data[8] (10,32) -> (10,20)
+Info:                Sink RGB1_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  led_panel_gif.v:173.13-177.6
+Info:                  mux_led.v:2.22-2.25
+Info:  0.4  2.7  Source RGB1_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  2.1  4.9    Net RGB1_LUT4_Z_D[3] (10,20) -> (28,12)
+Info:                Sink RGB1_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.1  Source RGB1_LUT4_Z.F
+Info:  3.0  8.1    Net RGB1[2]$TRELLIS_IO_OUT (28,12) -> (72,11)
+Info:                Sink RGB1[2]$tr_io.I
+Info:                Defined in:
+Info:                  led_panel_gif.v:173.13-177.6
+Info:                  mux_led.v:4.22-4.26
+Info: 1.2 ns logic, 6.9 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> 'posedge $glbnet$clk1':
+Info: curr total
+Info:  0.5  0.5  Source gif_ctrl.frame_actual_TRELLIS_FF_Q_1.Q
+Info:  1.0  1.5    Net frame_actual[0] (25,46) -> (25,43)
+Info:                Sink frame_actual_sync_TRELLIS_FF_Q_1.M
+Info:                Defined in:
+Info:                  led_panel_gif.v:88.7-94.6
+Info:                  gif_controller.v:8.22-8.34
+Info:  0.0  1.5  Setup frame_actual_sync_TRELLIS_FF_Q_1.M
+Info: 0.5 ns logic, 1.0 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk1' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source tmp_latch_TRELLIS_FF_Q.Q
+Info:  1.0  1.5    Net tmp_latch (4,44) -> (4,41)
+Info:                Sink LATCH_LUT4_Z.D
+Info:                Defined in:
+Info:                  led_panel_gif.v:34.19-34.28
+Info:  0.2  1.8  Source LATCH_LUT4_Z.F
+Info:  1.7  3.5    Net LATCH$TRELLIS_IO_OUT (4,41) -> (0,32)
+Info:                Sink LATCH$tr_io.I
+Info:                Defined in:
+Info:                  led_panel_gif.v:6.17-6.22
+Info: 0.8 ns logic, 2.7 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk1' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.5  0.5  Source frame_actual_sync_TRELLIS_FF_Q.Q
+Info:  2.9  3.5    Net frame_actual_sync[1] (24,42) -> (11,14)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  led_panel_gif.v:164.7-170.6
+Info:                  memory_gif.v:8.22-8.31
+Info:  0.2  3.7  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  3.7    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT (11,14) -> (11,14)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.30-157.32
+Info:  0.2  3.9  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  3.9    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1 (11,14) -> (11,14)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.54-157.56
+Info:  0.2  4.1  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  4.1    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D0 (11,14) -> (11,14)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  4.4  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.5  4.9    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_Z_PFUMX_Z_1_ALUT_LUT4_Z_A_LUT4_A_Z_LUT4_Z_1_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_C_Z_PFUMX_ALUT_Z_LUT4_A_Z_LUT4_Z_1_D_L6MUX21_Z_SD_LUT4_Z_A_LUT4_B_D_LUT4_D_Z[1] (11,14) -> (11,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.1  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  5.1    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT (11,15) -> (11,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.46-157.48
+Info:  0.2  5.3  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  5.3    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1 (11,15) -> (11,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.62-157.64
+Info:  0.2  5.5  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  5.5    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1 (11,15) -> (11,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  5.8  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D_L6MUX21_Z_1_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.8  6.6    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z_D[2] (11,15) -> (12,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  6.8  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  6.8    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT (12,15) -> (12,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.30-157.32
+Info:  0.2  7.0  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  7.0    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1 (12,15) -> (12,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.54-157.56
+Info:  0.2  7.2  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  7.2    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D0 (12,15) -> (12,15)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  7.5  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.0  8.4    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_C0[4] (12,15) -> (12,11)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_BLUT_LUT4_Z.M
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.3  8.7  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_PFUMX_Z_6_BLUT_LUT4_Z.OFX
+Info:  0.4  9.1    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z[3] (12,11) -> (12,11)
+Info:                Sink mem_inst.rdata_TRELLIS_FF_Q_20.M
+Info:                Defined in:
+Info:                  led_panel_gif.v:164.7-170.6
+Info:                  memory_gif.v:67.13-73.20
+Info:                  memory_gif.v:0.0-0.0
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/techmap.v:575.21-575.22
+Info:  0.0  9.1  Setup mem_inst.rdata_TRELLIS_FF_Q_20.M
+Info: 3.4 ns logic, 5.6 ns routing
+
+Info: Critical path report for cross-domain path 'negedge $glbnet$clk1' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source count_index.outc_TRELLIS_FF_Q.Q
+Info:  2.6  3.1    Net RGB0_LUT4_Z_1_D[0] (6,43) -> (10,20)
+Info:                Sink RGB1_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                Defined in:
+Info:                  led_panel_gif.v:173.13-177.6
+Info:                  mux_led.v:3.22-3.25
+Info:  0.3  3.3  Source RGB1_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  2.1  5.5    Net RGB1_LUT4_Z_D[3] (10,20) -> (28,12)
+Info:                Sink RGB1_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.7  Source RGB1_LUT4_Z.F
+Info:  3.0  8.7    Net RGB1[2]$TRELLIS_IO_OUT (28,12) -> (72,11)
+Info:                Sink RGB1[2]$tr_io.I
+Info:                Defined in:
+Info:                  led_panel_gif.v:173.13-177.6
+Info:                  mux_led.v:4.22-4.26
+Info: 1.0 ns logic, 7.7 ns routing
+
+Info: Critical path report for cross-domain path 'negedge $glbnet$clk1' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.5  0.5  Source count_col.outc_TRELLIS_FF_Q_4.Q
+Info:  2.4  2.9    Net col_addr[1] (18,26) -> (37,31)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  led_panel_gif.v:45.17-45.27
+Info:  0.2  3.2  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  3.2    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_ALUT (37,31) -> (37,31)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.30-141.32
+Info:  0.2  3.3  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  3.3    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1 (37,31) -> (37,31)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40
+Info:  0.2  3.6  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_L6MUX21_Z_2_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.4  5.0    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C[1] (37,31) -> (38,28)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_C.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  5.4  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_C.OFX
+Info:  0.0  5.4    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_C_Z_PFUMX_BLUT_Z (38,28) -> (38,28)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_D.FXA
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.58-157.60
+Info:  0.2  5.6  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_D.OFX
+Info:  0.0  5.6    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z (38,28) -> (38,28)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_D_2.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  5.8  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_D_2.OFX
+Info:  1.2  7.0    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_A_1_Z_PFUMX_ALUT_Z_LUT4_Z_2_A_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_SD_Z_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_B_LUT4_Z_A_LUT4_Z_C_LUT4_C_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z[3] (38,28) -> (40,29)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  7.3  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  7.3    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT (40,29) -> (40,29)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.30-157.32
+Info:  0.2  7.4  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  7.4    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1 (40,29) -> (40,29)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.54-157.56
+Info:  0.2  7.7  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  7.7    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D0 (40,29) -> (40,29)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  7.9  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C_L6MUX21_Z_1_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.4  8.3    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z_C[1] (40,29) -> (39,29)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  8.6  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_LUT4_Z.F
+Info:  1.6 10.2    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z_C_LUT4_Z_2_B_PFUMX_Z_C0_LUT4_C_Z_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_A_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z[1] (39,29) -> (37,39)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4 10.6  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0 10.6    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_L6MUX21_Z_D0 (37,39) -> (37,39)
+Info:                Sink ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.34-141.36
+Info:  0.2 10.8  Source ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.4 11.2    Net ctrl0.state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z_A_LUT4_A_Z_PFUMX_BLUT_Z_LUT4_B_C_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z_B_LUT4_A_Z_PFUMX_ALUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D1_Z_PFUMX_C0_Z[22] (37,39) -> (37,39)
+Info:                Sink mem_inst.rdata_TRELLIS_FF_Q_1.M
+Info:                Defined in:
+Info:                  led_panel_gif.v:164.7-170.6
+Info:                  memory_gif.v:67.13-73.20
+Info:                  memory_gif.v:0.0-0.0
+Info:                  /home/mayito/miniconda3/envs/digital/bin/../share/yosys/techmap.v:575.21-575.22
+Info:  0.0 11.2  Setup mem_inst.rdata_TRELLIS_FF_Q_1.M
+Info: 3.8 ns logic, 7.4 ns routing
+
+Info: Max frequency for clock              '$glbnet$clk1': 62.63 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 174.13 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 5.28 ns
+Info: Max delay <async>                           -> posedge $glbnet$clk1             : 4.05 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 8.08 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> posedge $glbnet$clk1             : 1.49 ns
+Info: Max delay posedge $glbnet$clk1              -> <async>                          : 3.50 ns
+Info: Max delay posedge $glbnet$clk1              -> posedge $glbnet$clk$TRELLIS_IO_IN: 9.07 ns
+Info: Max delay negedge $glbnet$clk1              -> <async>                          : 8.70 ns
+Info: Max delay negedge $glbnet$clk1              -> posedge $glbnet$clk$TRELLIS_IO_IN: 11.21 ns
+
+1 warning, 0 errors
+
+Info: Program finished normally.

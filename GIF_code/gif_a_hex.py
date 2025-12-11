@@ -26,21 +26,21 @@ def process_gif_frame(frame, width=64, height=32):
     - image1_data para la mitad inferior
     width x height: dimensiones finales del frame
     """
-    # Redimensionar si hace falta (resample LANCZOS)
+   
     if frame.size != (width, height):
         frame = frame.resize((width, height), Image.Resampling.LANCZOS)
 
-    # Asegurar modo RGB
+
     if frame.mode != 'RGB':
         frame = frame.convert('RGB')
 
     pixels = frame.load()
 
-    image0_data = []  # Mitad superior
-    image1_data = []  # Mitad inferior
+    image0_data = []  
+    image1_data = []  
 
     half_h = height // 2
-    # Recorremos fila por fila de la mitad superior
+   
     for row in range(half_h):
         for col in range(width):
             # píxel superior
@@ -77,26 +77,25 @@ def convert_gif_to_hex(gif_path, max_frames=4, width=64, height=32):
     total_frames = getattr(img, "n_frames", 1)
     print(f"Frames in GIF: {total_frames}")
 
-    # Creamos una imagen base (transparente/negra) del tamaño de trabajo
+    
     base = Image.new("RGBA", img.size)
     composed_frames = []
     frame_count = 0
 
-    # Recorremos frames y componemos (esto maneja frames parciales)
+    
     for frame in ImageSequence.Iterator(img):
         # Convertimos el frame a RGBA para componer
         frame_rgba = frame.convert("RGBA")
 
-        # Si la GIF tiene modo 'P' y box (posición parcial), mejor pegar en la base
-        # Pegamos el frame sobre la base según su caja (frame.info.get('transparency') no siempre suficiente)
+        #
         try:
-            # Algunos frames tienen .dispose info; aquí hacemos la composición simple:
+            
             base.paste(frame_rgba, (0,0), frame_rgba)
         except Exception:
             # fallback: usar alpha_composite para tamaños iguales
             base = Image.alpha_composite(base, frame_rgba)
 
-        # Copiamos el resultado (convertimos a RGB)
+        
         composed = base.convert("RGB").copy()
         composed_frames.append(composed)
 
@@ -115,7 +114,7 @@ def convert_gif_to_hex(gif_path, max_frames=4, width=64, height=32):
         save_hex_file(image0_data, f"frame{i}_image0.hex")
         save_hex_file(image1_data, f"frame{i}_image1.hex")
 
-    # Si hay menos frames que max_frames, duplicar el último
+    
     while len(composed_frames) < max_frames:
         last = len(composed_frames) - 1
         print(f"\nDuplicando frame {last} -> frame {len(composed_frames)}")
